@@ -13,9 +13,9 @@ class FlutterZendesk {
     return version;
   }
 
-  static Future<String> get getArticlesForSectionId async {
-    final String version =
+  static Future<Map<String, dynamic>> get getArticlesForSectionId async {
+    final Map<String, dynamic> articles =
         await channel.invokeMethod('getArticlesForSectionId');
-    return version;
+    return articles;
   }
 }

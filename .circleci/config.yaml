@@ -1,0 +1,40 @@
+# Orb 'codecov/codecov@1.0.2' resolved to 'codecov/codecov@1.0.2'
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cirrusci/flutter
+    steps:
+      - checkout
+      - run:
+          command: flutter doctor
+      - run:
+          command: flutter packages get
+      - run:
+          command: flutter test test
+
+workflows:
+  version: 2
+  workflow:
+    jobs:
+      - build
+
+# Original config.yml file:
+# version: 2.1
+#
+# orbs:
+#   codecov: codecov/codecov@1.0.2
+#
+# jobs:
+#   build:
+#     docker:
+#       - image: cirrusci/flutter
+#     steps:
+#       - checkout
+#       - run: flutter doctor
+#       - run: flutter packages get
+#       - run: flutter packages pub run build_runner build
+#       - run: flutter test --coverage test
+#       #- run: flutter -v build apk
+#       - codecov/upload:
+#           file: coverage/lcov.info%

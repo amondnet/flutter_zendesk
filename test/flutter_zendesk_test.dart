@@ -10,7 +10,17 @@ void main() {
     channel.setMockMethodCallHandler((MethodCall methodCall) async {
       if (methodCall.method == 'getPlatformVersion') {
         return '42';
-      } else if (methodCall.method == 'getPlatformVersion') {}
+      } else if (methodCall.method == 'getArticlesForSectionId') {
+        return {
+          "articles": [
+            {
+              "id": 35467,
+              "author_id": 888887,
+              "draft": true,
+            },
+          ]
+        };
+      }
     });
   });
 
@@ -20,5 +30,17 @@ void main() {
 
   test('getPlatformVersion', () async {
     expect(await FlutterZendesk.platformVersion, '42');
+  });
+
+  test('getArticlesForSectionId', () async {
+    expect(await FlutterZendesk.getArticlesForSectionId, {
+      "articles": [
+        {
+          "id": 35467,
+          "author_id": 888887,
+          "draft": true,
+        },
+      ]
+    });
   });
 }
