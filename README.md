@@ -1,6 +1,10 @@
 # flutter_zendesk
 
-A new flutter plugin project.
+[![CircleCI](https://circleci.com/gh/amondnet/flutter_zendesk.svg?style=svg)](https://circleci.com/gh/amondnet/flutter_zendesk)
+
+Zendesk 를 Flutter 에서 사용할 수 있습니다.
+
+
 
 ## Getting Started
 
