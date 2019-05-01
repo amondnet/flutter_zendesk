@@ -2,7 +2,10 @@
 
 [![CircleCI](https://circleci.com/gh/amondnet/flutter_zendesk.svg?style=svg)](https://circleci.com/gh/amondnet/flutter_zendesk)
 
+This project is currently under development.
+
 Zendesk 를 Flutter 에서 사용할 수 있습니다.
+
 
 
 
