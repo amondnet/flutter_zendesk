@@ -31,9 +31,15 @@ class FlutterZendesk {
     return version;
   }
 
-  static Future<String> createRequest() async {
+  static Future<String> createRequest(String subject, String requestDescription,
+      {List<String> tags: const []}) async {
     try {
-      final List<int> result = await channel.invokeMethod('createRequest');
+      final List<int> result = await channel.invokeMethod(
+          'createRequest', <String, dynamic>{
+        'subject': subject,
+        'requestDescription': requestDescription,
+        'tags': tags
+      });
       return String.fromCharCodes(result);
     } catch (e) {
       debugPrint('error : $e');
@@ -57,5 +63,35 @@ class FlutterZendesk {
       debugPrint('error : $e');
       throw e;
     }
+  }
+
+  static Future<Map<dynamic, dynamic>> getAllRequests() async {
+    try {
+      Map<dynamic, dynamic> requests =
+          // TODO(amirh): remove this on when the invokeMethod update makes it to stable Flutter.
+          // https://github.com/flutter/flutter/issues/26431
+          // ignore: strong_mode_implicit_dynamic_method
+          await channel.invokeMethod('getAllRequests');
+      debugPrint('good ${requests}');
+      return requests;
+    } catch (e) {
+      debugPrint('error : $e');
+      throw e;
+    }
+  }
+
+  static Future<void> setIdentity(String token) async {
+    assert(token != null && token.isNotEmpty);
+
+    try {
+      final response = await channel.invokeMethod('setIdentity', {
+        'token': token,
+      });
+      debugPrint('response : $response');
+    } catch (e) {
+      print('error : $e');
+      throw e;
+    }
+    return;
   }
 }

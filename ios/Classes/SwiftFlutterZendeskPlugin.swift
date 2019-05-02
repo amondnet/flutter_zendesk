@@ -20,23 +20,40 @@ public class SwiftFlutterZendeskPlugin: NSObject, FlutterPlugin {
         
         Zendesk.initialize(appId: appId, clientId: clientId, zendeskUrl: zendeskUrl);
         Support.initialize(withZendesk: Zendesk.instance)
-        let identity = Identity.createAnonymous()
-        Zendesk.instance?.setIdentity(identity)
+        
         result(appId);
-    } else if ( call.method == "createRequest" ) {
-        let provider = ZDKRequestProvider()
+    } else if (  call.method == "setIdentity" ) {
+        let arguments = call.arguments as! Dictionary<String, String>;
+        let token = arguments["token"];
 
+        var identity :Identity
+        if ( token != nil ) {
+            identity = Identity.createJwt(token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJ1c2VybmFtZSI6Imtha2FvXzEwMzEwMTc5MjMiLCJleHAiOjE1NTY4NTA3NDcsImVtYWlsIjoiIiwib3JpZ19pYXQiOjE1NTY3NjQzNDd9.xTydw8wBaOyTIu74MG6WWr9iBz2hSnI-2JbsfyHo2qM");
+        } else {
+            identity = Identity.createAnonymous()
+        }
+        
+        Zendesk.instance?.setIdentity(identity)
+        result(true);
+    } else if ( call.method == "createRequest" ) {
+        let arguments = call.arguments as! Dictionary<String, Any>;
+        let subject = arguments["subject"]! as! String;
+        let requestDescription = arguments["requestDescription"]! as! String;
+        let tags = arguments["tags"] as? Array<String>;
+        
+        let provider = ZDKRequestProvider()
+                
         let request = ZDKCreateRequest()
-        request.subject = "My printer is on fire!"
-        request.requestDescription = "The smoke is very colorful."
-        request.tags = ["printer", "fire"]
+        request.subject = subject
+        request.requestDescription = requestDescription
+        request.tags = tags
         provider.createRequest(request) { response, error in
             if ( response != nil ) {
                 let _response = response as! ZDKDispatcherResponse
                 result(_response.data);
             } else {
                 let _error = error! as NSError;
-                result(FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  ));
+                result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
             }
         }
     } else if ( call.method == "getAllRequests" ) {
@@ -44,10 +61,16 @@ public class SwiftFlutterZendeskPlugin: NSObject, FlutterPlugin {
         
         provider.getAllRequests(callback: { (requets, error) in
             if ( requets != nil ) {
-                result(requets);
+                let _requests = requets! as ZDKRequestsWithCommentingAgents
+                
+                let encoded = [
+                    "commentingAgents": _requests.commentingAgents.map( {agent in agent.toJson() }),
+                    "requests": _requests.requests.map( {request in request.toJson() }),
+                ];
+                result(encoded);
             } else {
                 let _error = error! as NSError;
-                result(FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  ));
+                result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
             }
         });
     } else if ( call.method == "getArticlesForSectionId") {
@@ -83,7 +106,7 @@ public class SwiftFlutterZendeskPlugin: NSObject, FlutterPlugin {
                     "articles": res]);
             } else {
                 let _error = error! as NSError;
-                result(FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  ));
+                result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
             }
         }
     } else {

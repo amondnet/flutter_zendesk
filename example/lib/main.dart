@@ -65,6 +65,15 @@ class _MyAppState extends State<MyApp> {
     } on PlatformException {
       articles = {};
     }
+
+    try {
+      articles = await FlutterZendesk.getAllRequests();
+      print('success');
+    } on PlatformException {
+      articles = {};
+    } catch (e) {
+      debugPrint('error : $e');
+    }
     // If the widget was removed from the tree while the asynchronous platform
     // message was in flight, we want to discard the reply rather than calling
     // setState to update our non-existent appearance.
