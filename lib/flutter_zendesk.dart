@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_zendesk/article.dart';
 import 'package:meta/meta.dart';
 
 class FlutterZendesk {
@@ -47,18 +48,25 @@ class FlutterZendesk {
     }
   }
 
-  static Future<Map<dynamic, dynamic>> getArticlesForSectionId(
-      String sectionId) async {
+  static Future<List<Article>> getArticlesForSectionId(String sectionId) async {
     assert(sectionId != null);
     try {
-      Map<dynamic, dynamic> articles =
+      Map<dynamic, dynamic> articlesJson =
           // TODO(amirh): remove this on when the invokeMethod update makes it to stable Flutter.
           // https://github.com/flutter/flutter/issues/26431
           // ignore: strong_mode_implicit_dynamic_method
           await channel.invokeMethod('getArticlesForSectionId',
               <String, dynamic>{'sectionId': sectionId});
-      debugPrint('good ${articles['articles']}');
-      return articles;
+      debugPrint('good ${articlesJson['articles']}');
+
+      if (articlesJson.containsKey('articles')) {
+        List<Map<String, dynamic>> list = articlesJson["articles"];
+        return list.map((article) {
+          return Article.fromJson(article);
+        }).toList();
+      }
+
+      return [];
     } catch (e) {
       debugPrint('error : $e');
       throw e;

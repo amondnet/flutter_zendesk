@@ -1,8 +1,8 @@
 name: flutter_zendesk
-description: A new flutter plugin project.
+description: Zendesk Support, Helpdesk for Flutter
 version: 0.0.1
-author:
-homepage:
+author: Minsu Lee
+homepage: https://amond.net
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
@@ -10,11 +10,13 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  json_annotation: ^2.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  build_runner: ^1.0.0
+  json_serializable: ^2.0.0
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
 

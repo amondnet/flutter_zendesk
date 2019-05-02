@@ -12,17 +12,17 @@ Article _$ArticleFromJson(Map<String, dynamic> json) {
       sectionId: json['section_id'] as int,
       title: json['title'] as String,
       body: json['body'] as String,
-      authorName: json['authorName'] as String,
+      authorName: json['author_name'] as String,
       authorId: json['authorId'] as int,
-      articleDetails: json['articleDetails'] as String,
-      articleParents: json['articleParents'] as String,
-      createdAt: (json['createdAt'] as num)?.toDouble(),
+      articleDetails: json['article_details'] as String,
+      articleParents: json['article_parents'] as String,
+      createdAt: (json['created_at'] as num)?.toDouble(),
       position: json['position'] as int,
       outdated: json['outdated'] as bool,
       voteSum: json['voteSum'] as int,
       labelNames:
-          (json['labelNames'] as List)?.map((e) => e as String)?.toList(),
-      htmlUrl: json['htmlUrl'] as String);
+          (json['label_names'] as List)?.map((e) => e as String)?.toList(),
+      htmlUrl: json['html_url'] as String);
 }
 
 Map<String, dynamic> _$ArticleToJson(Article instance) => <String, dynamic>{
@@ -30,14 +30,14 @@ Map<String, dynamic> _$ArticleToJson(Article instance) => <String, dynamic>{
       'section_id': instance.sectionId,
       'title': instance.title,
       'body': instance.body,
-      'authorName': instance.authorName,
+      'author_name': instance.authorName,
       'authorId': instance.authorId,
-      'articleDetails': instance.articleDetails,
-      'articleParents': instance.articleParents,
-      'createdAt': instance.createdAt,
+      'article_details': instance.articleDetails,
+      'article_parents': instance.articleParents,
+      'created_at': instance.createdAt,
       'position': instance.position,
       'outdated': instance.outdated,
       'voteSum': instance.voteSum,
-      'labelNames': instance.labelNames,
-      'htmlUrl': instance.htmlUrl
+      'label_names': instance.labelNames,
+      'html_url': instance.htmlUrl
     };

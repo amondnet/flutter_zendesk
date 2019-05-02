@@ -51,8 +51,8 @@ class _MyAppState extends State<MyApp> {
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
     String platformVersion;
-    Map articles = {};
-
+    List articles = [];
+    Map requests = {};
     await FlutterZendesk.initialize(
         widget.appId, widget.clientId, widget.zendeskUrl);
     //final resultId = await FlutterZendesk.createRequest();
@@ -63,14 +63,14 @@ class _MyAppState extends State<MyApp> {
       articles = await FlutterZendesk.getArticlesForSectionId('360004091934');
       print('success');
     } on PlatformException {
-      articles = {};
+      articles = [];
     }
 
     try {
-      articles = await FlutterZendesk.getAllRequests();
+      requests = await FlutterZendesk.getAllRequests();
       print('success');
     } on PlatformException {
-      articles = {};
+      requests = {};
     } catch (e) {
       debugPrint('error : $e');
     }
