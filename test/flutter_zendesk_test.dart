@@ -20,6 +20,8 @@ void main() {
             },
           ]
         };
+      } else if (methodCall.method == 'initialize') {
+        return true;
       }
     });
   });
@@ -33,7 +35,7 @@ void main() {
   });
 
   test('getArticlesForSectionId', () async {
-    expect(await FlutterZendesk.getArticlesForSectionId, {
+    expect(await FlutterZendesk.getArticlesForSectionId('test'), {
       "articles": [
         {
           "id": 35467,
@@ -42,5 +44,9 @@ void main() {
         },
       ]
     });
+  });
+
+  test('initialize', () async {
+    await FlutterZendesk.initialize('a', 'b', 'c');
   });
 }

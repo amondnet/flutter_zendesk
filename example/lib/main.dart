@@ -1,18 +1,45 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:flutter_zendesk/flutter_zendesk.dart';
 
-void main() => runApp(MyApp());
+void main(List<String> args) {
+  String appId = '';
+  String clientId = '';
+  String zendeskUrl = '';
+  if (args != null && args.isNotEmpty) {
+    appId = args[0];
+    clientId = args[1];
+    zendeskUrl = args[2];
+  }
+
+  runApp(MyApp(
+    appId: appId,
+    clientId: clientId,
+    zendeskUrl: zendeskUrl,
+  ));
+}
 
 class MyApp extends StatefulWidget {
+  final String appId;
+  final String clientId;
+  final String zendeskUrl;
+
+  const MyApp(
+      {Key key,
+      @required this.appId,
+      @required this.clientId,
+      @required this.zendeskUrl})
+      : super(key: key);
+
   @override
   _MyAppState createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
   List _articles = [];
 
   @override
@@ -24,18 +51,19 @@ class _MyAppState extends State<MyApp> {
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
     String platformVersion;
-    Map<String, dynamic> articles;
+    Map articles = {};
+
+    await FlutterZendesk.initialize(
+        widget.appId, widget.clientId, widget.zendeskUrl);
+    //final resultId = await FlutterZendesk.createRequest();
+    //debugPrint('result $resultId');
     // Platform messages may fail, so we use a try/catch PlatformException.
-    try {
-      platformVersion = await FlutterZendesk.platformVersion;
-    } on PlatformException {
-      platformVersion = 'Failed to get platform version.';
-    }
 
     try {
-      articles = await FlutterZendesk.getArticlesForSectionId;
+      articles = await FlutterZendesk.getArticlesForSectionId('360004091934');
+      print('success');
     } on PlatformException {
-      articles = {'articles': []};
+      articles = {};
     }
     // If the widget was removed from the tree while the asynchronous platform
     // message was in flight, we want to discard the reply rather than calling
@@ -43,8 +71,7 @@ class _MyAppState extends State<MyApp> {
     if (!mounted) return;
 
     setState(() {
-      _platformVersion = platformVersion;
-      _articles = articles['articles'];
+      _articles = [];
     });
   }
 
@@ -56,7 +83,12 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: Column(children: [
+            Text(
+              'articles: ${_articles.length}',
+              key: Key('articles'),
+            ),
+          ]),
         ),
       ),
     );

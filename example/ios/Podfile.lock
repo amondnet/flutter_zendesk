@@ -15,7 +15,7 @@ PODS:
     - ZendeskSDK/Providers
 
 DEPENDENCIES:
-  - Flutter (from `.symlinks/flutter/ios-release`)
+  - Flutter (from `.symlinks/flutter/ios`)
   - flutter_zendesk (from `.symlinks/plugins/flutter_zendesk/ios`)
 
 SPEC REPOS:
@@ -24,7 +24,7 @@ SPEC REPOS:
 
 EXTERNAL SOURCES:
   Flutter:
-    :path: ".symlinks/flutter/ios-release"
+    :path: ".symlinks/flutter/ios"
   flutter_zendesk:
     :path: ".symlinks/plugins/flutter_zendesk/ios"
 
