@@ -2,7 +2,7 @@ import 'package:json_annotation/json_annotation.dart';
 
 part 'article.g.dart';
 
-@JsonSerializable()
+@JsonSerializable(anyMap: true)
 class Article {
   int identifier;
   @JsonKey(name: 'section_id')

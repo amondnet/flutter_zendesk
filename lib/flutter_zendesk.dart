@@ -60,7 +60,7 @@ class FlutterZendesk {
       debugPrint('good ${articlesJson['articles']}');
 
       if (articlesJson.containsKey('articles')) {
-        List<Map<String, dynamic>> list = articlesJson["articles"];
+        List list = articlesJson["articles"];
         return list.map((article) {
           return Article.fromJson(article);
         }).toList();
@@ -96,6 +96,16 @@ class FlutterZendesk {
         'token': token,
       });
       debugPrint('response : $response');
+    } catch (e) {
+      print('error : $e');
+      throw e;
+    }
+    return;
+  }
+
+  static Future<void> showTicketScreen() async {
+    try {
+      await channel.invokeMethod('Show a ticket screen');
     } catch (e) {
       print('error : $e');
       throw e;

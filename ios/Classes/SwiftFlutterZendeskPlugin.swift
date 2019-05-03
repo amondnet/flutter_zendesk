@@ -5,6 +5,7 @@ import ZendeskCoreSDK
 import ZendeskProviderSDK
 
 public class SwiftFlutterZendeskPlugin: NSObject, FlutterPlugin {
+    private var aObjNavi: UINavigationController?
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "net.amond.flutter_zendesk", binaryMessenger: registrar.messenger())
     let instance = SwiftFlutterZendeskPlugin()
@@ -56,6 +57,25 @@ public class SwiftFlutterZendeskPlugin: NSObject, FlutterPlugin {
                 result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
             }
         }
+    } else if (call.method == "Show a ticket screen") {
+        //https://developer.zendesk.com/embeddables/docs/ios_support_sdk/requests#show-a-ticket-screen
+        
+            let requestScreen = RequestUi.buildRequestUi(with: [])
+
+            if let navigationController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController {
+                navigationController.pushViewController(requestScreen, animated: true)
+            } else {
+                let storyboard : UIStoryboard? = UIStoryboard.init(name: "Main", bundle: nil);
+                let window: UIWindow = ((UIApplication.shared.delegate?.window)!)!
+                
+                let objVC: UIViewController? = storyboard!.instantiateViewController(withIdentifier: "FlutterViewController")
+                self.aObjNavi = UINavigationController(rootViewController: objVC!)
+                 window.rootViewController = self.aObjNavi!
+            }
+        
+        result (true)
+
+        
     } else if ( call.method == "getAllRequests" ) {
         let provider = ZDKRequestProvider()
         
