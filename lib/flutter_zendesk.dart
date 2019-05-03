@@ -103,9 +103,10 @@ class FlutterZendesk {
     return;
   }
 
-  static Future<void> showTicketScreen() async {
+  static Future<void> showTicketScreen(context) async {
     try {
       await channel.invokeMethod('Show a ticket screen');
+      Navigator.pop(context);
     } catch (e) {
       print('error : $e');
       throw e;

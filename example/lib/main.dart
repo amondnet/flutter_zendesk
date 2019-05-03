@@ -100,7 +100,7 @@ class _MyAppState extends State<MyApp> {
             FlatButton(
               child: Text('ShowTicket'),
               onPressed: () {
-                FlutterZendesk.showTicketScreen();
+                FlutterZendesk.showTicketScreen(context);
               },
             )
           ]),
