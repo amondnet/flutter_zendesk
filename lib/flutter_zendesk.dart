@@ -21,9 +21,8 @@ class FlutterZendesk {
     assert(zendeskUrl != null && appId.isNotEmpty);
 
     try {
-      final response = await channel.invokeMethod('initialize',
+      await channel.invokeMethod('initialize',
           {'appId': appId, 'clientId': clientId, 'zendeskUrl': zendeskUrl});
-      debugPrint('response : $response');
     } catch (e) {
       print('error : $e');
       throw e;
@@ -96,10 +95,9 @@ class FlutterZendesk {
     assert(token != null && token.isNotEmpty);
 
     try {
-      final response = await channel.invokeMethod('setIdentity', {
+      await channel.invokeMethod('setIdentity', {
         'token': token,
       });
-      debugPrint('response : $response');
     } catch (e) {
       print('error : $e');
       throw e;
