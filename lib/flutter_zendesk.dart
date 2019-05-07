@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:convert';
 
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -6,6 +7,9 @@ import 'package:flutter_zendesk/article.dart';
 import 'package:meta/meta.dart';
 
 class FlutterZendesk {
+  static final FlutterZendesk _singleton = new FlutterZendesk._internal();
+  FlutterZendesk._internal() {}
+
   @visibleForTesting
   static const MethodChannel channel =
       const MethodChannel('net.amond.flutter_zendesk');
@@ -57,16 +61,16 @@ class FlutterZendesk {
           // ignore: strong_mode_implicit_dynamic_method
           await channel.invokeMethod('getArticlesForSectionId',
               <String, dynamic>{'sectionId': sectionId});
-      debugPrint('good ${articlesJson['articles']}');
-
       if (articlesJson.containsKey('articles')) {
+        debugPrint('has articles');
         List list = articlesJson["articles"];
         return list.map((article) {
-          return Article.fromJson(article);
+          Map<String, dynamic> myMap = new Map<String, dynamic>.from(article);
+          return Article.fromJson(myMap);
         }).toList();
+      } else {
+        return [];
       }
-
-      return [];
     } catch (e) {
       debugPrint('error : $e');
       throw e;
@@ -106,7 +110,18 @@ class FlutterZendesk {
   static Future<void> showTicketScreen(context) async {
     try {
       await channel.invokeMethod('Show a ticket screen');
-      Navigator.pop(context);
+      //Navigator.pop(context);
+    } catch (e) {
+      print('error : $e');
+      throw e;
+    }
+    return;
+  }
+
+  static Future<void> showTickets() async {
+    try {
+      await channel.invokeMethod('showTickets');
+      //Navigator.pop(context);
     } catch (e) {
       print('error : $e');
       throw e;

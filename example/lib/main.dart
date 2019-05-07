@@ -60,7 +60,7 @@ class _MyAppState extends State<MyApp> {
     // Platform messages may fail, so we use a try/catch PlatformException.
 
     try {
-      //articles = await FlutterZendesk.getArticlesForSectionId('360004091934');
+      articles = await FlutterZendesk.getArticlesForSectionId('360004091934');
       print('success');
     } on PlatformException {
       articles = [];
@@ -80,7 +80,7 @@ class _MyAppState extends State<MyApp> {
     if (!mounted) return;
 
     setState(() {
-      _articles = [];
+      _articles = articles;
     });
   }
 
@@ -101,6 +101,12 @@ class _MyAppState extends State<MyApp> {
               child: Text('ShowTicket'),
               onPressed: () {
                 FlutterZendesk.showTicketScreen(context);
+              },
+            ),
+            FlatButton(
+              child: Text('ShowTickets'),
+              onPressed: () {
+                FlutterZendesk.showTickets();
               },
             )
           ]),

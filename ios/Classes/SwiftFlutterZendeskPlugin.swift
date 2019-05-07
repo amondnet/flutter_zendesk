@@ -4,18 +4,28 @@ import ZendeskSDK
 import ZendeskCoreSDK
 import ZendeskProviderSDK
 
-public class SwiftFlutterZendeskPlugin: NSObject, FlutterPlugin, UINavigationControllerDelegate {
+@objc public class SwiftFlutterZendeskPlugin: NSObject, FlutterPlugin {
     private var aObjNavi: UINavigationController?
     private var requestScreen: UIViewController?
-    let group = DispatchGroup()
+    
+    static var app: FlutterAppDelegate?;
+    
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "net.amond.flutter_zendesk", binaryMessenger: registrar.messenger())
     let instance = SwiftFlutterZendeskPlugin()
-
+    
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
+  
     
+    public static func setApplication(_ application: FlutterAppDelegate) {
+        self.app = application;
+    }
     
+    public static func getApplication( ) -> FlutterAppDelegate?  {
+        return self.app;
+    }
+
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
     if ( call.method == "initialize" ) {
         let arguments = call.arguments as! Dictionary<String, String>;
@@ -66,17 +76,41 @@ public class SwiftFlutterZendeskPlugin: NSObject, FlutterPlugin, UINavigationCon
         if ( self.requestScreen == nil ) {
             self.requestScreen = RequestUi.buildRequestUi(with: [])
         }
+        
         if let navigationController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController {
             navigationController.pushViewController(self.requestScreen!, animated: true)
             result (true)
         } else {
             let storyboard : UIStoryboard? = UIStoryboard.init(name: "Main", bundle: nil);
-            let window: UIWindow = ((UIApplication.shared.delegate?.window)!)!
-            
+            //let window: UIWindow = ((UIApplication.shared.delegate?.window)!)!
+            let window = UIWindow(frame: UIScreen.main.bounds)
+            window.makeKeyAndVisible()
+            window.rootViewController = nil
             let objVC: UIViewController? = storyboard!.instantiateViewController(withIdentifier: "FlutterViewController")
             self.aObjNavi = UINavigationController(rootViewController: objVC!)
             window.rootViewController = self.aObjNavi!
+            self.aObjNavi!.isNavigationBarHidden = true
+            
             self.aObjNavi!.pushViewController(self.requestScreen!, animated: true)
+            result (true)
+        }
+        
+    } else if (call.method == "showTickets") {
+        //https://developer.zendesk.com/embeddables/docs/ios_support_sdk/requests#show-a-ticket-screen
+        let requestListController = RequestUi.buildRequestList()
+
+        if let navigationController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController {
+            navigationController.pushViewController(requestListController, animated: true)
+            result (true)
+        } else {
+            let storyboard : UIStoryboard? = UIStoryboard.init(name: "Main", bundle: nil);
+            SwiftFlutterZendeskPlugin.getApplication()?.window.rootViewController = nil
+            SwiftFlutterZendeskPlugin.getApplication()?.window = UIWindow(frame: UIScreen.main.bounds)
+            SwiftFlutterZendeskPlugin.getApplication()?.window.makeKeyAndVisible()
+            
+            let objVC: UIViewController? = storyboard!.instantiateViewController(withIdentifier: "FlutterViewController")
+            self.aObjNavi = UINavigationController(rootViewController: objVC!)
+            self.aObjNavi!.pushViewController(requestListController, animated: true)
             result (true)
         }
         
