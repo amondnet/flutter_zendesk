@@ -41,8 +41,8 @@ class FlutterZendesk {
     return version;
   }
 
-  static Future<String> createRequest(String subject, String requestDescription,
-      {List<String> tags: const []}) async {
+  static Future<String> createRequest(String requestDescription,
+      {String subject, List<String> tags: const []}) async {
     try {
       final List<int> result = await channel.invokeMethod(
           'createRequest', <String, dynamic>{

@@ -8,6 +8,7 @@ class ZdkCreateRequest {
 
   final String subject;
 
+  @JsonKey(name: 'request_description')
   final String requestDescription;
   @JsonKey(ignore: true)
   // TODO

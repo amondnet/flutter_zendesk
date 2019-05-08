@@ -115,23 +115,6 @@ import ZendeskProviderSDK
             result (true)
         }
         
-    } else if ( call.method == "createRequest" ) {
-        let provider = ZDKRequestProvider()
-        
-        provider.createRequest(ZDKCreateRequest!, withCallback: { (Any?, error) in
-            if ( requets != nil ) {
-                let _requests = requets! as ZDKRequestsWithCommentingAgents
-                
-                let encoded = [
-                    "commentingAgents": _requests.commentingAgents.map( {agent in agent.toJson() }),
-                    "requests": _requests.requests.map( {request in request.toJson() }),
-                ];
-                result(encoded);
-            } else {
-                let _error = error! as NSError;
-                result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
-            }
-        });
     } else if ( call.method == "getAllRequests" ) {
         let provider = ZDKRequestProvider()
         
