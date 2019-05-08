@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f00e8215-90d2-4ed8-b540-2a3ba3701aa9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/ios/Classes/SwiftFlutterZendeskPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/ios/Classes/SwiftFlutterZendeskPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/create_request.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/create_request.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/create_request.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/create_request.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftFlutterZendeskPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftFlutterZendeskPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_zendesk.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_zendesk.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/create_request.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/create_request.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/create_request.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/create_request.g.dart" afterDir="false" />
-    </list>
+    <list default="true" id="f00e8215-90d2-4ed8-b540-2a3ba3701aa9" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/flutter_zendesk.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+            <state relative-caret-position="454">
+              <caret line="65" column="53" selection-start-line="65" selection-start-column="53" selection-end-line="65" selection-end-column="53" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -171,7 +161,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="y" value="23" />
     <option name="width" value="997" />
     <option name="height" value="988" />
@@ -339,7 +329,7 @@
       <workItem from="1556886269195" duration="591000" />
       <workItem from="1556893819495" duration="34000" />
       <workItem from="1557207093124" duration="4424000" />
-      <workItem from="1557276275714" duration="12895000" />
+      <workItem from="1557276275714" duration="13633000" />
     </task>
     <task id="LOCAL-00001" summary="development preview">
       <created>1556718519231</created>
@@ -398,10 +388,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58461000" />
+    <option name="totallyTimeSpent" value="59199000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="997" height="988" extended-state="0" />
+    <frame x="0" y="23" width="997" height="988" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27958116" />
@@ -785,8 +775,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/flutter_zendesk.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+        <state relative-caret-position="454">
+          <caret line="65" column="53" selection-start-line="65" selection-start-column="53" selection-end-line="65" selection-end-column="53" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>

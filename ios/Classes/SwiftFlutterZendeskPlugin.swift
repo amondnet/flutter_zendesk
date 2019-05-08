@@ -53,7 +53,7 @@ import ZendeskProviderSDK
         result(true);
     } else if ( call.method == "createRequest" ) {
         let arguments = call.arguments as! Dictionary<String, Any>;
-        let subject = arguments["subject"]! as! String;
+        let subject = arguments["subject"] as? String;
         let requestDescription = arguments["requestDescription"]! as! String;
         let tags = arguments["tags"] as? Array<String>;
         
