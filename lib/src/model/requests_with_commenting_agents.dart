@@ -6,9 +6,9 @@ part 'requests_with_commenting_agents.g.dart';
 
 @JsonSerializable(anyMap: true, explicitToJson: true)
 class ZdkRequestsWithCommentingAgents {
-  @JsonKey(name: "commenting_agents", defaultValue: [])
+  @JsonKey(name: "commenting_agents", defaultValue: [], includeIfNull: false)
   final List<ZdkSupportUser> commentingAgents;
-  @JsonKey(name: "requests", defaultValue: [])
+  @JsonKey(name: "requests", defaultValue: [], includeIfNull: false)
   final List<ZdkRequest> requests;
 
   ZdkRequestsWithCommentingAgents({this.commentingAgents, this.requests});
