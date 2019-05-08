@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:convert';
 
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -8,6 +7,7 @@ import 'package:flutter_zendesk/src/model/comment_with_user.dart';
 import 'package:flutter_zendesk/src/model/request.dart';
 import 'package:flutter_zendesk/src/model/requests_with_commenting_agents.dart';
 import 'package:meta/meta.dart';
+
 export 'model.dart';
 
 class FlutterZendesk {

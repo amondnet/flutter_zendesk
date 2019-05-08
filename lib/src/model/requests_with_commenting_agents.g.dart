@@ -20,9 +20,18 @@ ZdkRequestsWithCommentingAgents _$ZdkRequestsWithCommentingAgentsFromJson(
 }
 
 Map<String, dynamic> _$ZdkRequestsWithCommentingAgentsToJson(
-        ZdkRequestsWithCommentingAgents instance) =>
-    <String, dynamic>{
-      'commenting_agents':
-          instance.commentingAgents?.map((e) => e?.toJson())?.toList(),
-      'requests': instance.requests?.map((e) => e?.toJson())?.toList()
-    };
+    ZdkRequestsWithCommentingAgents instance) {
+  final val = <String, dynamic>{};
+
+  void writeNotNull(String key, dynamic value) {
+    if (value != null) {
+      val[key] = value;
+    }
+  }
+
+  writeNotNull('commenting_agents',
+      instance.commentingAgents?.map((e) => e?.toJson())?.toList());
+  writeNotNull(
+      'requests', instance.requests?.map((e) => e?.toJson())?.toList());
+  return val;
+}
