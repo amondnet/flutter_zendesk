@@ -8,6 +8,7 @@ import flutter_zendesk
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     
+
     SwiftFlutterZendeskPlugin.setApplication(self);
     GeneratedPluginRegistrant.register(with: self)
     

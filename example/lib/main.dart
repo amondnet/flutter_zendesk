@@ -58,8 +58,20 @@ class _MyAppState extends State<MyApp> {
     //final resultId = await FlutterZendesk.createRequest();
     //debugPrint('result $resultId');
     // Platform messages may fail, so we use a try/catch PlatformException.
+    await FlutterZendesk.setIdentity(
+        'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTcyOTA5MDUuODk1LCJqdGkiOiIwOTUzMTIwYS05N2UxLTQzZjYtYWJjMS0yZjllZmI2NjAxMjgiLCJuYW1lIjoibWlybGltX2FkbWluIiwiZW1haWwiOiJtaXJsaW1wZkBnbWFpbC5jb20iLCJleHRlcm5hbF9pZCI6MX0.eHHot84tf42RE42ystPm3vUe-27Hu2CRwASWCrR4nbw');
 
     try {
+      final test = await FlutterZendesk.getAllRequests();
+      final test1 = await FlutterZendesk.getRequestById('15');
+      final test2 = await FlutterZendesk.getCommentsByRequestId('15');
+
+      print('requests : ${test.toJson()}');
+      print('getRequestById : ${test1.toJson()}');
+      test2.forEach((c) {
+        print('c : ${c.toJson()}');
+      });
+
       articles = await FlutterZendesk.getArticlesForSectionId('360004091934');
       print('success');
     } on PlatformException {
@@ -107,6 +119,12 @@ class _MyAppState extends State<MyApp> {
               child: Text('ShowTickets'),
               onPressed: () {
                 FlutterZendesk.showTickets();
+              },
+            ),
+            FlatButton(
+              child: Text('shot article'),
+              onPressed: () {
+                FlutterZendesk.showArticle();
               },
             )
           ]),

@@ -3,11 +3,15 @@ import 'dart:convert';
 
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_zendesk/article.dart';
+import 'package:flutter_zendesk/src/model/article.dart';
+import 'package:flutter_zendesk/src/model/comment_with_user.dart';
+import 'package:flutter_zendesk/src/model/request.dart';
+import 'package:flutter_zendesk/src/model/requests_with_commenting_agents.dart';
 import 'package:meta/meta.dart';
 
 class FlutterZendesk {
   static final FlutterZendesk _singleton = new FlutterZendesk._internal();
+
   FlutterZendesk._internal() {}
 
   @visibleForTesting
@@ -76,17 +80,62 @@ class FlutterZendesk {
     }
   }
 
-  static Future<Map<dynamic, dynamic>> getAllRequests() async {
+  static Future<ZdkRequestsWithCommentingAgents> getAllRequests() async {
     try {
       Map<dynamic, dynamic> requests =
           // TODO(amirh): remove this on when the invokeMethod update makes it to stable Flutter.
           // https://github.com/flutter/flutter/issues/26431
           // ignore: strong_mode_implicit_dynamic_method
           await channel.invokeMethod('getAllRequests');
-      debugPrint('good ${requests}');
-      return requests;
+      Map<String, dynamic> myMap = new Map<String, dynamic>.from(requests);
+
+      //debugPrint('requests ${myMap}');
+      return ZdkRequestsWithCommentingAgents.fromJson(myMap);
     } catch (e) {
       debugPrint('error : $e');
+      throw e;
+    }
+    return ZdkRequestsWithCommentingAgents();
+  }
+
+  static Future<ZdkRequest> getRequestById(String requestId) async {
+    try {
+      Map<dynamic, dynamic> request =
+          // TODO(amirh): remove this on when the invokeMethod update makes it to stable Flutter.
+          // https://github.com/flutter/flutter/issues/26431
+          // ignore: strong_mode_implicit_dynamic_method
+          await channel
+              .invokeMethod('getRequestById', {"requestId": requestId});
+      //debugPrint('getRequestById ${request}');
+      //Map<String, dynamic> myMap = new Map<String, dynamic>.from(requests);
+      Map<String, dynamic> myMap = new Map<String, dynamic>.from(request);
+      return ZdkRequest.fromJson(myMap);
+      //debugPrint('requests ${myMap}');
+    } catch (e) {
+      debugPrint('error : $e');
+      throw e;
+    }
+  }
+
+  static Future<List<CommentWithUser>> getCommentsByRequestId(
+      String requestId) async {
+    try {
+      List requests =
+          // TODO(amirh): remove this on when the invokeMethod update makes it to stable Flutter.
+          // https://github.com/flutter/flutter/issues/26431
+          // ignore: strong_mode_implicit_dynamic_method
+          await channel
+              .invokeMethod('getCommentsByRequestId', {"requestId": requestId});
+      //Map<String, dynamic> myMap = new Map<String, dynamic>.from(requests);
+
+      return requests.map((map) {
+        Map<String, dynamic> myMap =
+            new Map<String, dynamic>.from(map as Map<dynamic, dynamic>);
+        return CommentWithUser.fromJson(myMap);
+      }).toList();
+      //debugPrint('requests ${myMap}');
+    } catch (e) {
+      debugPrint('getCommentsByRequestId Error : $e');
       throw e;
     }
   }
@@ -119,6 +168,17 @@ class FlutterZendesk {
   static Future<void> showTickets() async {
     try {
       await channel.invokeMethod('showTickets');
+      //Navigator.pop(context);
+    } catch (e) {
+      print('error : $e');
+      throw e;
+    }
+    return;
+  }
+
+  static void showArticle() async {
+    try {
+      await channel.invokeMethod('showArticle');
       //Navigator.pop(context);
     } catch (e) {
       print('error : $e');

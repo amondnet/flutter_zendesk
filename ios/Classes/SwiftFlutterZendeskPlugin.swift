@@ -12,6 +12,7 @@ import ZendeskProviderSDK
     
   public static func register(with registrar: FlutterPluginRegistrar) {
     let channel = FlutterMethodChannel(name: "net.amond.flutter_zendesk", binaryMessenger: registrar.messenger())
+    
     let instance = SwiftFlutterZendeskPlugin()
     
     registrar.addMethodCallDelegate(instance, channel: channel)
@@ -82,15 +83,15 @@ import ZendeskProviderSDK
             result (true)
         } else {
             let storyboard : UIStoryboard? = UIStoryboard.init(name: "Main", bundle: nil);
-            //let window: UIWindow = ((UIApplication.shared.delegate?.window)!)!
-            let window = UIWindow(frame: UIScreen.main.bounds)
-            window.makeKeyAndVisible()
-            window.rootViewController = nil
+            let window: UIWindow = ((UIApplication.shared.delegate?.window)!)!
+            //let window = UIWindow(frame: UIScreen.main.bounds)
+            //window.makeKeyAndVisible()
+            //window.rootViewController = nil
             let objVC: UIViewController? = storyboard!.instantiateViewController(withIdentifier: "FlutterViewController")
             self.aObjNavi = UINavigationController(rootViewController: objVC!)
-            window.rootViewController = self.aObjNavi!
             self.aObjNavi!.isNavigationBarHidden = true
-            
+            window.rootViewController = self.aObjNavi!
+            window.makeKeyAndVisible()
             self.aObjNavi!.pushViewController(self.requestScreen!, animated: true)
             result (true)
         }
@@ -126,6 +127,38 @@ import ZendeskProviderSDK
                     "requests": _requests.requests.map( {request in request.toJson() }),
                 ];
                 result(encoded);
+            } else {
+                let _error = error! as NSError;
+                result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
+            }
+        });
+    } else if ( call.method == "getRequestById" ) {
+        let provider = ZDKRequestProvider()
+        let arguments = call.arguments as! Dictionary<String, String>;
+        let requestId = arguments["requestId"]!;
+
+        provider.getRequestById(requestId, withCallback: { (request, error) in
+            if ( request != nil ) {
+                result(request?.toJson());
+            } else {
+                let _error = error! as NSError;
+                result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
+            }
+        });
+    } else if ( call.method == "getCommentsByRequestId" ) {
+        let provider = ZDKRequestProvider()
+        let arguments = call.arguments as! Dictionary<String, String>;
+        let requestId = arguments["requestId"]!;
+        
+        provider.getCommentsWithRequestId(requestId, withCallback: { (commentsWithUser, error ) in
+            if ( commentsWithUser != nil ) {
+                let encode = commentsWithUser!.map( {commentWithUser in
+                    [
+                        "comment": commentWithUser.comment.toJson(),
+                        "user": commentWithUser.user.toJson()
+                    ]
+                });
+                result(encode);
             } else {
                 let _error = error! as NSError;
                 result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
@@ -167,6 +200,28 @@ import ZendeskProviderSDK
                 result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
             }
         }
+    } else if (call.method == "showArticle") {
+    //https://developer.zendesk.com/embeddables/docs/ios_support_sdk/requests#show-a-ticket-screen
+                
+        let articleController = ZDKHelpCenterUi.buildHelpCenterArticleUi(withArticleId: "360022535234")
+        
+        if let navigationController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController {
+            navigationController.pushViewController(articleController, animated: true)
+            result (true)
+        } else {
+            let storyboard : UIStoryboard? = UIStoryboard.init(name: "Main", bundle: nil);
+            let window: UIWindow = ((UIApplication.shared.delegate?.window)!)!
+            //let window = UIWindow(frame: UIScreen.main.bounds)
+            //window.makeKeyAndVisible()
+            //window.rootViewController = nil
+            let objVC: UIViewController? = storyboard!.instantiateViewController(withIdentifier: "FlutterViewController")
+            self.aObjNavi = UINavigationController(rootViewController: objVC!)
+            //self.aObjNavi!.isNavigationBarHidden = true
+            window.rootViewController = self.aObjNavi!
+            self.aObjNavi!.pushViewController(articleController, animated: true)
+            result (true)
+        }
+    
     } else {
         result(FlutterMethodNotImplemented);
     }
