@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:convert';
 
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
@@ -41,7 +42,7 @@ class FlutterZendesk {
     return version;
   }
 
-  static Future<String> createRequest(String requestDescription,
+  static Future<ZdkRequest> createRequest(String requestDescription,
       {String subject, List<String> tags: const []}) async {
     try {
       final List<int> result = await channel.invokeMethod(
@@ -50,7 +51,7 @@ class FlutterZendesk {
         'requestDescription': requestDescription,
         'tags': tags
       });
-      return String.fromCharCodes(result);
+      return ZdkRequest.fromJson(jsonDecode(String.fromCharCodes(result)));
     } catch (e) {
       debugPrint('error : $e');
       throw e;
@@ -142,7 +143,7 @@ class FlutterZendesk {
       String requestId) async {
     try {
       List requests =
-          // TODO(amirh): remove this on when the invokeMethod update makes it to stable Flutter.
+          // TODO(amirh): remove this on when the invokㅇㅇㄴddeMethod update makes it to stable Flutter.
           // https://github.com/flutter/flutter/issues/26431
           // ignore: strong_mode_implicit_dynamic_method
           await channel
@@ -156,7 +157,7 @@ class FlutterZendesk {
       }).toList();
       //debugPrint('requests ${myMap}');
     } catch (e) {
-      debugPrint('getCommentsByRequestId Error : $e');
+      debugPrint('getCommentsByRequestId Eㅊㄱㄷrror : $e');
       throw e;
     }
   }

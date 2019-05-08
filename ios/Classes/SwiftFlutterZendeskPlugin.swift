@@ -123,7 +123,7 @@ import ZendeskProviderSDK
                 let _requests = requets! as ZDKRequestsWithCommentingAgents
                 
                 let encoded = [
-                    "commentingAgents": _requests.commentingAgents.map( {agent in agent.toJson() }),
+                    "commenting_agents": _requests.commentingAgents.map( {agent in agent.toJson() }),
                     "requests": _requests.requests.map( {request in request.toJson() }),
                 ];
                 result(encoded);

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f00e8215-90d2-4ed8-b540-2a3ba3701aa9" name="Default Changelist" comment="" />
+    <list default="true" id="f00e8215-90d2-4ed8-b540-2a3ba3701aa9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/flutter_zendesk.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/flutter_zendesk.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_zendesk.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_zendesk.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/requests_with_commenting_agents.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/requests_with_commenting_agents.dart" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,18 +20,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/flutter_zendesk.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="65" column="53" selection-start-line="65" selection-start-column="53" selection-end-line="65" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#20#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/model/create_request.dart">
           <provider selected="true" editor-type-id="text-editor">
@@ -36,10 +30,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/flutter_zendesk.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="95" column="44" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/src/model/requests_with_commenting_agents.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="120">
+              <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
@@ -50,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/model.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
+            <state relative-caret-position="15">
               <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -62,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="83" column="9" lean-forward="true" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
+            <state relative-caret-position="1155">
+              <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -74,7 +80,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftFlutterZendeskPlugin.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="240">
               <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
@@ -83,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/model/request.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            <state relative-caret-position="75">
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="16" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
@@ -104,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/src/model/article.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="46" column="57" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="46" selection-end-column="57" />
+            <state relative-caret-position="690">
+              <caret line="46" column="57" selection-start-line="44" selection-start-column="1" selection-end-line="46" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -154,17 +160,18 @@
         <option value="$PROJECT_DIR$/lib/src/model/support_user.dart" />
         <option value="$PROJECT_DIR$/lib/src/model/comment_with_user.dart" />
         <option value="$PROJECT_DIR$/lib/model.dart" />
-        <option value="$PROJECT_DIR$/lib/src/model/requests_with_commenting_agents.dart" />
         <option value="$PROJECT_DIR$/example/lib/main.dart" />
         <option value="$PROJECT_DIR$/lib/src/model/create_request.dart" />
         <option value="$PROJECT_DIR$/lib/flutter_zendesk.dart" />
+        <option value="$PROJECT_DIR$/lib/src/model/requests_with_commenting_agents.dart" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="238" />
     <option name="y" value="23" />
-    <option name="width" value="997" />
-    <option name="height" value="988" />
+    <option name="width" value="1373" />
+    <option name="height" value="1004" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -172,6 +179,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -221,9 +231,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -329,7 +336,9 @@
       <workItem from="1556886269195" duration="591000" />
       <workItem from="1556893819495" duration="34000" />
       <workItem from="1557207093124" duration="4424000" />
-      <workItem from="1557276275714" duration="13633000" />
+      <workItem from="1557276275714" duration="14297000" />
+      <workItem from="1557319191279" duration="118000" />
+      <workItem from="1557355325329" duration="104000" />
     </task>
     <task id="LOCAL-00001" summary="development preview">
       <created>1556718519231</created>
@@ -388,13 +397,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59199000" />
+    <option name="totallyTimeSpent" value="60085000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="997" height="988" extended-state="1" />
+    <frame x="238" y="23" width="1373" height="1004" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27958116" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25995493" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Build Variants" order="3" side_tool="true" />
@@ -418,7 +427,7 @@
       <window_info anchor="bottom" id="Flutter Performance" order="12" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="15" visible="true" weight="0.32700893" />
+      <window_info anchor="bottom" id="Terminal" order="15" weight="0.36941963" />
       <window_info anchor="bottom" id="Messages" order="16" weight="0.32972974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -638,9 +647,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/model/zdk_support_user.g.dart">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/model/zdk_support_user.g.dart" />
     <entry file="file://$USER_HOME$/flutter/packages/flutter/lib/src/widgets/binding.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -698,34 +705,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/model/comment.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="60" selection-start-line="24" selection-start-column="1" selection-end-line="26" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/src/model/article.g.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/model/request.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/model/article.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="46" column="57" lean-forward="true" selection-start-line="44" selection-start-column="1" selection-end-line="46" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -738,7 +721,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/model.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="15">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
@@ -748,37 +731,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="83" column="9" lean-forward="true" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
+        <state relative-caret-position="1155">
+          <caret line="83" column="9" selection-start-line="83" selection-start-column="9" selection-end-line="83" selection-end-column="9" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/src/model/requests_with_commenting_agents.dart">
+    <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftFlutterZendeskPlugin.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/model/request.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="16" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ios/Classes/SwiftFlutterZendeskPlugin.swift">
+    <entry file="file://$PROJECT_DIR$/lib/src/model/comment.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="390">
+          <caret line="26" column="60" selection-start-line="24" selection-start-column="1" selection-end-line="26" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/model/article.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="57" selection-start-line="44" selection-start-column="1" selection-end-line="46" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/flutter_zendesk.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="65" column="53" selection-start-line="65" selection-start-column="53" selection-end-line="65" selection-end-column="53" />
+        <state relative-caret-position="336">
+          <caret line="95" column="44" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="44" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/src/model/requests_with_commenting_agents.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="34" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
