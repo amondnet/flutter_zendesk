@@ -8,6 +8,7 @@ import 'package:flutter_zendesk/src/model/comment_with_user.dart';
 import 'package:flutter_zendesk/src/model/request.dart';
 import 'package:flutter_zendesk/src/model/requests_with_commenting_agents.dart';
 import 'package:meta/meta.dart';
+export 'model.dart';
 
 class FlutterZendesk {
   static final FlutterZendesk _singleton = new FlutterZendesk._internal();
