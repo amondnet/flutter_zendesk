@@ -164,7 +164,23 @@ import ZendeskProviderSDK
                 result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
             }
         });
-    } else if ( call.method == "getArticlesForSectionId") {
+    } else if ( call.method == "addComment" ) {
+        let provider = ZDKRequestProvider()
+        let arguments = call.arguments as! Dictionary<String, Any>;
+        let requestId = arguments["requestId"] as! String;
+        let comment = arguments["comment"] as! String;
+        // let attachemntsDict = arguments["attachments"] as? [AnyHashable : Any]?;
+
+        
+        provider.addComment(comment, forRequestId: requestId, attachments: nil, withCallback: { ( comment, error ) in
+            if ( comment != nil ) {
+                result(comment?.toJson());
+            } else {
+                let _error = error! as NSError;
+                result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
+            }
+        });
+    }else if ( call.method == "getArticlesForSectionId") {
         let arguments = call.arguments as! Dictionary<String, String>;
 
         let helpCenterProvider = ZDKHelpCenterProvider();

@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
+import 'package:flutter_zendesk/model.dart';
 import 'package:flutter_zendesk/src/model/article.dart';
 import 'package:flutter_zendesk/src/model/comment_with_user.dart';
 import 'package:flutter_zendesk/src/model/request.dart';
@@ -114,6 +115,25 @@ class FlutterZendesk {
       //debugPrint('requests ${myMap}');
     } catch (e) {
       debugPrint('error : $e');
+      throw e;
+    }
+  }
+
+  static Future<ZdkComment> addComment(String comment, String requestId) async {
+    try {
+      Map<dynamic, dynamic> payload =
+          // TODO(amirh): remove this on when the invokeMethod update makes it to stable Flutter.
+          // https://github.com/flutter/flutter/issues/26431
+          // ignore: strong_mode_implicit_dynamic_method
+          await channel.invokeMethod(
+              'addComment', {"requestId": requestId, "comment": comment});
+
+      Map<String, dynamic> myMap = new Map<String, dynamic>.from(payload);
+      return ZdkComment.fromJson(myMap);
+
+      //debugPrint('requests ${myMap}');
+    } catch (e) {
+      debugPrint('getCommentsByRequestId Error : $e');
       throw e;
     }
   }
