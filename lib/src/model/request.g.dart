@@ -14,6 +14,7 @@ ZdkRequest _$ZdkRequestFromJson(Map json) {
       publicUpdatedAt: json['public_updated_at'] as String,
       id: json['id'] as String,
       requesterId: json['requester_id'] as int,
+      status: json['status'] as String,
       collaboratorIds:
           (json['collaborator_ids'] as List)?.map((e) => e as int)?.toList(),
       subject: json['subject'] as String,
@@ -31,6 +32,7 @@ Map<String, dynamic> _$ZdkRequestToJson(ZdkRequest instance) =>
       'public_updated_at': instance.publicUpdatedAt,
       'id': instance.id,
       'requester_id': instance.requesterId,
+      'status': instance.status,
       'collaborator_ids': instance.collaboratorIds,
       'subject': instance.subject,
       'description': instance.description,
