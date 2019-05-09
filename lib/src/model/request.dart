@@ -17,7 +17,6 @@ class ZdkRequest {
   final String id;
   @JsonKey(name: "requester_id")
   final int requesterId;
-  @JsonKey(ignore: true)
   final String status;
   @JsonKey(name: "collaborator_ids")
   final List<int> collaboratorIds;

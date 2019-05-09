@@ -91,8 +91,7 @@ class FlutterZendesk {
           // ignore: strong_mode_implicit_dynamic_method
           await channel.invokeMethod('getAllRequests');
       Map<String, dynamic> myMap = new Map<String, dynamic>.from(requests);
-
-      //debugPrint('requests ${myMap}');
+      debugPrint('requests ${myMap}');
       return ZdkRequestsWithCommentingAgents.fromJson(myMap);
     } catch (e) {
       debugPrint('error : $e');
@@ -112,8 +111,8 @@ class FlutterZendesk {
       //debugPrint('getRequestById ${request}');
       //Map<String, dynamic> myMap = new Map<String, dynamic>.from(requests);
       Map<String, dynamic> myMap = new Map<String, dynamic>.from(request);
+
       return ZdkRequest.fromJson(myMap);
-      //debugPrint('requests ${myMap}');
     } catch (e) {
       debugPrint('error : $e');
       throw e;

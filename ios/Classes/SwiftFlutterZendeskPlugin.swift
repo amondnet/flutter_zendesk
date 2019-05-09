@@ -121,9 +121,13 @@ import ZendeskProviderSDK
         provider.getAllRequests(callback: { (requets, error) in
             if ( requets != nil ) {
                 let _requests = requets! as ZDKRequestsWithCommentingAgents
-                
                 let encoded = [
-                    "commenting_agents": _requests.commentingAgents.map( {agent in agent.toJson() }),
+                    "commenting_agents": _requests.commentingAgents.map( { (agent : ZDKSupportUser)  in
+                        var dict = agent.toJson() as Dictionary
+                        dict["avatar_url"] = agent.avatarURL
+                        dict["user_fields"] = agent.userFields
+                        return dict
+                    }),
                     "requests": _requests.requests.map( {request in request.toJson() }),
                 ];
                 result(encoded);
