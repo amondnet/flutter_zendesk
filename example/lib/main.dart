@@ -55,7 +55,6 @@ class _MyAppState extends State<MyApp> {
     Map requests = {};
     await FlutterZendesk.initialize(
         widget.appId, widget.clientId, widget.zendeskUrl);
-    //final resultId = await FlutterZendesk.createRequest();
     //debugPrint('result $resultId');
     // Platform messages may fail, so we use a try/catch PlatformException.
     /*
@@ -65,6 +64,8 @@ class _MyAppState extends State<MyApp> {
     await FlutterZendesk.setIdentity(
         'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTcyOTA5MDUuODk1LCJqdGkiOiIwOTUzMTIwYS05N2UxLTQzZjYtYWJjMS0yZjllZmI2NjAxMjgiLCJuYW1lIjoibWlybGltX2FkbWluIiwiZW1haWwiOiJtaXJsaW1wZkBnbWFpbC5jb20iLCJleHRlcm5hbF9pZCI6MX0.eHHot84tf42RE42ystPm3vUe-27Hu2CRwASWCrR4nbw');
     try {
+      final resultId = await FlutterZendesk.createRequest('test');
+
       final test = await FlutterZendesk.getAllRequests();
       final test1 = await FlutterZendesk.getRequestById('15');
       final test2 = await FlutterZendesk.getCommentsByRequestId('15');

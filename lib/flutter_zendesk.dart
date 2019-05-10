@@ -51,7 +51,11 @@ class FlutterZendesk {
         'requestDescription': requestDescription,
         'tags': tags
       });
-      return ZdkRequest.fromJson(jsonDecode(String.fromCharCodes(result)));
+      final json = jsonDecode(String.fromCharCodes(result));
+      // debugPrint('json : $json');
+      final created = ZdkRequest.fromJson(json["request"]);
+      // debugPrint('created : ${created.toJson()}');
+      return created;
     } catch (e) {
       debugPrint('error : $e');
       throw e;
@@ -68,7 +72,7 @@ class FlutterZendesk {
           await channel.invokeMethod('getArticlesForSectionId',
               <String, dynamic>{'sectionId': sectionId});
       if (articlesJson.containsKey('articles')) {
-        debugPrint('has articles');
+        // debugPrint('has articles');
         List list = articlesJson["articles"];
         return list.map((article) {
           Map<String, dynamic> myMap = new Map<String, dynamic>.from(article);
@@ -91,7 +95,7 @@ class FlutterZendesk {
           // ignore: strong_mode_implicit_dynamic_method
           await channel.invokeMethod('getAllRequests');
       Map<String, dynamic> myMap = new Map<String, dynamic>.from(requests);
-      debugPrint('requests ${myMap}');
+      // debugPrint('requests ${myMap}');
       return ZdkRequestsWithCommentingAgents.fromJson(myMap);
     } catch (e) {
       debugPrint('error : $e');
