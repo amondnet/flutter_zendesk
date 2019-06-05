@@ -44,7 +44,7 @@ import ZendeskProviderSDK
 
         var identity :Identity
         if ( token != nil ) {
-            identity = Identity.createJwt(token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJ1c2VybmFtZSI6Imtha2FvXzEwMzEwMTc5MjMiLCJleHAiOjE1NTY4NTA3NDcsImVtYWlsIjoiIiwib3JpZ19pYXQiOjE1NTY3NjQzNDd9.xTydw8wBaOyTIu74MG6WWr9iBz2hSnI-2JbsfyHo2qM");
+            identity = Identity.createJwt(token: token);
         } else {
             identity = Identity.createAnonymous()
         }
