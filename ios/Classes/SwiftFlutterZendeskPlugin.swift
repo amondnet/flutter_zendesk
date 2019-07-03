@@ -36,7 +36,7 @@ import ZendeskProviderSDK
         
         Zendesk.initialize(appId: appId, clientId: clientId, zendeskUrl: zendeskUrl);
         Support.initialize(withZendesk: Zendesk.instance)
-        SupportUI.initialize(withZendesk: Zendesk.instance)
+        // SupportUI.initialize(withZendesk: Zendesk.instance)
         result(appId);
     } else if (  call.method == "setIdentity" ) {
         let arguments = call.arguments as! Dictionary<String, String>;
