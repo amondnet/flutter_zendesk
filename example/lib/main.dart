@@ -50,25 +50,26 @@ class _MyAppState extends State<MyApp> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
-    String platformVersion;
     List articles = [];
-    Map requests = {};
     await FlutterZendesk.initialize(
         widget.appId, widget.clientId, widget.zendeskUrl);
+    debugPrint('initialize');
     //debugPrint('result $resultId');
     // Platform messages may fail, so we use a try/catch PlatformException.
     /*
     await FlutterZendesk.setIdentity(
         'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTcyOTA5MDUuODk1LCJqdGkiOiIwOTUzMTIwYS05N2UxLTQzZjYtYWJjMS0yZjllZmI2NjAxMjgiLCJuYW1lIjoibWlybGltX2FkbWluIiwiZW1haWwiOiJtaXJsaW1wZkBnbWFpbC5jb20iLCJleHRlcm5hbF9pZCI6MX0.eHHot84tf42RE42ystPm3vUe-27Hu2CRwASWCrR4nbw');
 */
+
     await FlutterZendesk.setIdentity(
-        'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTcyOTA5MDUuODk1LCJqdGkiOiIwOTUzMTIwYS05N2UxLTQzZjYtYWJjMS0yZjllZmI2NjAxMjgiLCJuYW1lIjoibWlybGltX2FkbWluIiwiZW1haWwiOiJtaXJsaW1wZkBnbWFpbC5jb20iLCJleHRlcm5hbF9pZCI6MX0.eHHot84tf42RE42ystPm3vUe-27Hu2CRwASWCrR4nbw');
+        'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcyOTA5MDUuODk1LCJqdGkiOiIwOTUzMTIwYS05N2UxLTQzZjYtYWJjMS0yZjllZmI2NjAxMjgiLCJuYW1lIjoibWlybGltX2FkbWluIiwiZW1haWwiOiJtaXJsaW1wZkBnbWFpbC5jb20iLCJleHRlcm5hbF9pZCI6M30.sEmUv0261BSZTnw2RH1HJhjy9tvWp9U6wPdNasucb6I');
+
     try {
       final resultId = await FlutterZendesk.createRequest('test');
-
+      print('result: $resultId');
       final test = await FlutterZendesk.getAllRequests();
-      final test1 = await FlutterZendesk.getRequestById('15');
-      final test2 = await FlutterZendesk.getCommentsByRequestId('15');
+      final test1 = await FlutterZendesk.getRequestById('3');
+      final test2 = await FlutterZendesk.getCommentsByRequestId('3');
 
       print('requests : ${test.toJson()}');
       print('getRequestById : ${test1.toJson()}');
@@ -76,7 +77,7 @@ class _MyAppState extends State<MyApp> {
         print('c : ${c.toJson()}');
       });
 
-      articles = await FlutterZendesk.getArticlesForSectionId('360004091934');
+      //articles = await FlutterZendesk.getArticlesForSectionId('360004091934');
       print('success');
     } on PlatformException {
       articles = [];
@@ -85,9 +86,7 @@ class _MyAppState extends State<MyApp> {
     try {
       //requests = await FlutterZendesk.getAllRequests();
       print('success');
-    } on PlatformException {
-      requests = {};
-    } catch (e) {
+    } on PlatformException {} catch (e) {
       debugPrint('error : $e');
     }
     // If the widget was removed from the tree while the asynchronous platform

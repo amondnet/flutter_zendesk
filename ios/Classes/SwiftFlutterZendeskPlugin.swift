@@ -63,15 +63,17 @@ import ZendeskProviderSDK
         request.subject = subject
         request.requestDescription = requestDescription
         request.tags = tags
+       
         provider.createRequest(request) { response, error in
-            if ( response != nil ) {
-                let _response = response as! ZDKDispatcherResponse
-                result(_response.data);
-            } else {
-                let _error = error! as NSError;
-                result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
+                if ( response != nil ) {
+                    let _response = response as! ZDKDispatcherResponse
+                    result(_response.data);
+                } else {
+                    let _error = error! as NSError;
+                    result(FlutterError( code: "Error : " + String(_error.code), message: _error.domain, details: _error.localizedDescription  ));
+                }
             }
-        }
+        
     } else if (call.method == "Show a ticket screen") {
         //https://developer.zendesk.com/embeddables/docs/ios_support_sdk/requests#show-a-ticket-screen
         if ( self.requestScreen == nil ) {
@@ -133,7 +135,7 @@ import ZendeskProviderSDK
                 result(encoded);
             } else {
                 let _error = error! as NSError;
-                result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
+                result(FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  ));
             }
         });
     } else if ( call.method == "getRequestById" ) {
@@ -146,7 +148,7 @@ import ZendeskProviderSDK
                 result(request?.toJson());
             } else {
                 let _error = error! as NSError;
-                result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
+                result(FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  ));
             }
         });
     } else if ( call.method == "getCommentsByRequestId" ) {
@@ -165,7 +167,7 @@ import ZendeskProviderSDK
                 result(encode);
             } else {
                 let _error = error! as NSError;
-                result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
+                result(FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  ));
             }
         });
     } else if ( call.method == "addComment" ) {
@@ -181,7 +183,7 @@ import ZendeskProviderSDK
                 result(comment?.toJson());
             } else {
                 let _error = error! as NSError;
-                result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
+                result(FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  ));
             }
         });
     }else if ( call.method == "getArticlesForSectionId") {
@@ -216,7 +218,7 @@ import ZendeskProviderSDK
                     "articles": res]);
             } else {
                 let _error = error! as NSError;
-                result([FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  )]);
+                result(FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  ));
             }
         }
     } else if (call.method == "showArticle") {

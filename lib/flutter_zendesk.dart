@@ -45,17 +45,22 @@ class FlutterZendesk {
   static Future<ZdkRequest> createRequest(String requestDescription,
       {String subject, List<String> tags: const []}) async {
     try {
-      final List<int> result = await channel.invokeMethod(
-          'createRequest', <String, dynamic>{
-        'subject': subject,
+      final dynamic result =
+          await channel.invokeMethod('createRequest', <String, dynamic>{
+        'subject': subject ?? requestDescription,
         'requestDescription': requestDescription,
         'tags': tags
       });
-      final json = jsonDecode(String.fromCharCodes(result));
-      // debugPrint('json : $json');
-      final created = ZdkRequest.fromJson(json["request"]);
-      // debugPrint('created : ${created.toJson()}');
-      return created;
+
+      debugPrint('result : $result');
+      if (result is List<int>) {
+        final json = jsonDecode(String.fromCharCodes(result));
+        debugPrint('json : $json');
+        final created = ZdkRequest.fromJson(json["request"]);
+        debugPrint('created : ${created.toJson()}');
+        return created;
+      }
+      return null;
     } catch (e) {
       debugPrint('error : $e');
       throw e;
