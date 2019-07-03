@@ -194,8 +194,7 @@ import ZendeskProviderSDK
                 let items = articles! as! Array<ZDKHelpCenterArticle>
 
                 let res = items.map( {article in
-                    ["article_details": article.article_details,
-                     "identifier": article.identifier,
+                    ["identifier": article.identifier,
                      "section_id": article.section_id,
                      "title": article.title,
                      "body": article.body,
