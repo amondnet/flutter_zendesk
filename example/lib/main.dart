@@ -10,16 +10,19 @@ void main(List<String> args) {
   String appId = '';
   String clientId = '';
   String zendeskUrl = '';
+  String jwt = '';
   if (args != null && args.isNotEmpty) {
     appId = args[0];
     clientId = args[1];
     zendeskUrl = args[2];
+    jwt = args[3];
   }
 
   runApp(MyApp(
     appId: appId,
     clientId: clientId,
     zendeskUrl: zendeskUrl,
+    jwt: jwt,
   ));
 }
 
@@ -27,12 +30,13 @@ class MyApp extends StatefulWidget {
   final String appId;
   final String clientId;
   final String zendeskUrl;
-
+  final String jwt;
   const MyApp(
       {Key key,
       @required this.appId,
       @required this.clientId,
-      @required this.zendeskUrl})
+      @required this.zendeskUrl,
+      @required this.jwt})
       : super(key: key);
 
   @override
@@ -61,8 +65,7 @@ class _MyAppState extends State<MyApp> {
         'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTcyOTA5MDUuODk1LCJqdGkiOiIwOTUzMTIwYS05N2UxLTQzZjYtYWJjMS0yZjllZmI2NjAxMjgiLCJuYW1lIjoibWlybGltX2FkbWluIiwiZW1haWwiOiJtaXJsaW1wZkBnbWFpbC5jb20iLCJleHRlcm5hbF9pZCI6MX0.eHHot84tf42RE42ystPm3vUe-27Hu2CRwASWCrR4nbw');
 */
 
-    await FlutterZendesk.setIdentity(
-        'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcyOTA5MDUuODk1LCJqdGkiOiIwOTUzMTIwYS05N2UxLTQzZjYtYWJjMS0yZjllZmI2NjAxMjgiLCJuYW1lIjoibWlybGltX2FkbWluIiwiZW1haWwiOiJtaXJsaW1wZkBnbWFpbC5jb20iLCJleHRlcm5hbF9pZCI6M30.sEmUv0261BSZTnw2RH1HJhjy9tvWp9U6wPdNasucb6I');
+    await FlutterZendesk.setIdentity(widget.jwt);
 
     try {
       final resultId = await FlutterZendesk.createRequest('test');
