@@ -167,7 +167,7 @@ import ZendeskProviderSDK
                 result(encode);
             } else {
                 let _error = error! as NSError;
-                result(FlutterError( code: String(_error.code), message: _error.domain, details: _error.userInfo  ));
+                result(FlutterError( code: "Error: " + String(_error.code), message: _error.domain, details: _error.localizedDescription  ));
             }
         });
     } else if ( call.method == "addComment" ) {
