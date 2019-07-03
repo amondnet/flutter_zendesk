@@ -4,13 +4,14 @@ PODS:
     - Flutter
     - ZendeskSDK
     - ZendeskSDK/Core
-  - ZendeskSDK (2.3.1):
-    - ZendeskSDK/Providers (= 2.3.1)
-    - ZendeskSDK/UI (= 2.3.1)
-  - ZendeskSDK/Core (2.3.1)
-  - ZendeskSDK/Providers (2.3.1):
+    - ZendeskSDK/Providers
+  - ZendeskSDK (3.0.0):
+    - ZendeskSDK/Providers (= 3.0.0)
+    - ZendeskSDK/UI (= 3.0.0)
+  - ZendeskSDK/Core (3.0.0)
+  - ZendeskSDK/Providers (3.0.0):
     - ZendeskSDK/Core
-  - ZendeskSDK/UI (2.3.1):
+  - ZendeskSDK/UI (3.0.0):
     - ZendeskSDK/Core
     - ZendeskSDK/Providers
 
@@ -30,8 +31,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
-  flutter_zendesk: 9a7a27474dc02fac8d7a954e100d7ff41d8629d3
-  ZendeskSDK: cbd49d65efb2f2cdbdcaac84e618896ae87b861e
+  flutter_zendesk: 2ad977f66dd37af1d9075cba5eb318d59e671f28
+  ZendeskSDK: 445b63024dc3e0021d18bf86a32eb1d3e9404d66
 
 PODFILE CHECKSUM: ebd43b443038e611b86ede96e613bd6033c49497
 
