@@ -56,14 +56,20 @@ import ZendeskProviderSDK
         let subject = arguments["subject"] as? String;
         let requestDescription = arguments["requestDescription"]! as! String;
         let tags = arguments["tags"] as? Array<String>;
-        
+        let customFields = arguments["customFields"] as? Array<Dictionary<String, Any>>
         let provider = ZDKRequestProvider()
                 
         let request = ZDKCreateRequest()
         request.subject = subject
         request.requestDescription = requestDescription
         request.tags = tags
-       
+        if ( customFields != nil ) {
+            let fields = customFields!.map {
+                ZDKCustomField(fieldId: $0["id"] as? NSNumber, andValue: $0["value"] as? String)
+            }
+            request.customTicketFields = fields as? [ZDKCustomField]
+        }
+
         provider.createRequest(request) { response, error in
                 if ( response != nil ) {
                     let _response = response as! ZDKDispatcherResponse
