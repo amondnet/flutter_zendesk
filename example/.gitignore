@@ -72,3 +72,4 @@
 
 _test.sh
 test_driver/
+!/ios/Flutter/flutter_export_environment.sh

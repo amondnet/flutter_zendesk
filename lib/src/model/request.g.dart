@@ -21,7 +21,11 @@ ZdkRequest _$ZdkRequestFromJson(Map json) {
       description: json['description'] as String,
       lastComment: json['last_comment'] == null
           ? null
-          : ZdkComment.fromJson(json['last_comment'] as Map));
+          : ZdkComment.fromJson(json['last_comment'] as Map),
+      customTicketFields: (json['custom_fields'] as List)
+              ?.map((e) => e == null ? null : ZdkCustomField.fromJson(e as Map))
+              ?.toList() ??
+          []);
 }
 
 Map<String, dynamic> _$ZdkRequestToJson(ZdkRequest instance) =>
@@ -36,5 +40,7 @@ Map<String, dynamic> _$ZdkRequestToJson(ZdkRequest instance) =>
       'collaborator_ids': instance.collaboratorIds,
       'subject': instance.subject,
       'description': instance.description,
-      'last_comment': instance.lastComment?.toJson()
+      'last_comment': instance.lastComment?.toJson(),
+      'custom_fields':
+          instance.customTicketFields?.map((e) => e?.toJson())?.toList()
     };

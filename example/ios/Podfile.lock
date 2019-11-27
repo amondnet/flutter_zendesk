@@ -2,37 +2,38 @@ PODS:
   - Flutter (1.0.0)
   - flutter_zendesk (0.0.1):
     - Flutter
-    - ZendeskSDK (= 2.3.1)
-    - ZendeskSDK/Core (= 2.3.1)
-  - ZendeskSDK (2.3.1):
-    - ZendeskSDK/Providers (= 2.3.1)
-    - ZendeskSDK/UI (= 2.3.1)
-  - ZendeskSDK/Core (2.3.1)
-  - ZendeskSDK/Providers (2.3.1):
+    - ZendeskSDK (= 3.0.3)
+    - ZendeskSDK/Core (= 3.0.3)
+    - ZendeskSDK/Providers (= 3.0.3)
+  - ZendeskSDK (3.0.3):
+    - ZendeskSDK/Providers (= 3.0.3)
+    - ZendeskSDK/UI (= 3.0.3)
+  - ZendeskSDK/Core (3.0.3)
+  - ZendeskSDK/Providers (3.0.3):
     - ZendeskSDK/Core
-  - ZendeskSDK/UI (2.3.1):
+  - ZendeskSDK/UI (3.0.3):
     - ZendeskSDK/Core
     - ZendeskSDK/Providers
 
 DEPENDENCIES:
-  - Flutter (from `.symlinks/flutter/ios`)
+  - Flutter (from `.symlinks/flutter/ios-release`)
   - flutter_zendesk (from `.symlinks/plugins/flutter_zendesk/ios`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - ZendeskSDK
 
 EXTERNAL SOURCES:
   Flutter:
-    :path: ".symlinks/flutter/ios"
+    :path: ".symlinks/flutter/ios-release"
   flutter_zendesk:
     :path: ".symlinks/plugins/flutter_zendesk/ios"
 
 SPEC CHECKSUMS:
-  Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
-  flutter_zendesk: fc15a4c1d2aac27cece2d0f1cdb04a7d09521e43
-  ZendeskSDK: cbd49d65efb2f2cdbdcaac84e618896ae87b861e
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_zendesk: 6b5036c5921428a848557d17af1f199bcaac6427
+  ZendeskSDK: 12f516028e26e2e47a861cc0f5da968f4db3989a
 
 PODFILE CHECKSUM: ebd43b443038e611b86ede96e613bd6033c49497
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.8.3

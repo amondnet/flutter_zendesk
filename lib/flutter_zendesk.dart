@@ -4,10 +4,6 @@ import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_zendesk/model.dart';
-import 'package:flutter_zendesk/src/model/article.dart';
-import 'package:flutter_zendesk/src/model/comment_with_user.dart';
-import 'package:flutter_zendesk/src/model/request.dart';
-import 'package:flutter_zendesk/src/model/requests_with_commenting_agents.dart';
 import 'package:meta/meta.dart';
 
 export 'model.dart';
@@ -43,13 +39,16 @@ class FlutterZendesk {
   }
 
   static Future<ZdkRequest> createRequest(String requestDescription,
-      {String subject, List<String> tags: const []}) async {
+      {String subject,
+      List<String> tags: const [],
+      List<ZdkCustomField> customField: const []}) async {
     try {
       final dynamic result =
           await channel.invokeMethod('createRequest', <String, dynamic>{
         'subject': subject ?? requestDescription,
         'requestDescription': requestDescription,
-        'tags': tags
+        'tags': tags,
+        'customField': customField?.map((v) => v.toJson())?.toList()
       });
 
       debugPrint('result : $result');

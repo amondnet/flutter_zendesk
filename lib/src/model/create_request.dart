@@ -1,3 +1,4 @@
+import 'package:flutter_zendesk/src/model/custom_field.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'create_request.g.dart';
@@ -13,16 +14,15 @@ class ZdkCreateRequest {
   @JsonKey(ignore: true)
   // TODO
   final List attachments;
-  @JsonKey(ignore: true)
-  // TODO
-  final List customTicketFields;
+  @JsonKey(defaultValue: [])
+  final List<ZdkCustomField> customTicketFields;
 
   ZdkCreateRequest(
     this.requestDescription, {
     this.tags,
     this.subject,
     this.attachments,
-    this.customTicketFields,
+    this.customTicketFields = const [],
   });
 
   factory ZdkCreateRequest.fromJson(Map json) =>
