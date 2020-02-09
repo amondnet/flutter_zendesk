@@ -2,9 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f00e8215-90d2-4ed8-b540-2a3ba3701aa9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/example/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/example/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/attachment.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/attachment.g.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/test/attachment_test.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/model/attachment.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/model/attachment.g.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/attachment_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/flutter_zendesk.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/flutter_zendesk.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/article.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/article.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment_with_user.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment_with_user.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/create_request.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/create_request.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/request.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/request.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/requests_with_commenting_agents.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/requests_with_commenting_agents.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/support_user.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/support_user.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/flutter_zendesk.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_zendesk.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/article.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/article.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/comment.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/comment.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/comment_with_user.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/comment_with_user.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/create_request.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/create_request.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/request.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/request.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/requests_with_commenting_agents.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/requests_with_commenting_agents.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/support_user.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/support_user.g.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,12 +41,37 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>standart</find>
+      <find>json</find>
+      <find>setind</find>
+      <find>sta</find>
+      <find>track</find>
+      <find>createre</find>
+      <find>setiden</find>
+      <find>token</find>
+      <find>author_name</find>
+      <find>details</find>
+      <find>createreq</find>
+      <find>oim</find>
+      <find>initia</find>
+      <find>platformexc</find>
+      <find>StandardMessageCodec</find>
+      <find>initialize</find>
+      <find>swift</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="ROOT_SYNC" value="SYNC" />
   </component>
-  <component name="ProjectId" id="1T8eqae5l8IM7enKFMoqJw7zr9i" />
+  <component name="ProjectId" id="1XYYGzXLKBjmxNAG3A5bJsz64jY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -29,6 +82,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -40,19 +96,7 @@
       <recent name="$PROJECT_DIR$/example/test_driver" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Flutter.main.dart">
+  <component name="RunManager" selected="Flutter Test.deserialize">
     <configuration name="app_test.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/example/test_driver/app_test.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/example" />
@@ -71,9 +115,9 @@
       <option name="testFile" value="$PROJECT_DIR$/example/test/widget_test.dart" />
       <method v="2" />
     </configuration>
-    <configuration name="getArticlesForSectionId" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testName" value="getArticlesForSectionId" />
-      <option name="testFile" value="$PROJECT_DIR$/test/flutter_zendesk_test.dart" />
+    <configuration name="deserialize" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
+      <option name="testName" value="deserialize" />
+      <option name="testFile" value="$PROJECT_DIR$/test/attachment_test.dart" />
       <method v="2" />
     </configuration>
     <configuration name="initialize" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
@@ -89,18 +133,18 @@
       <item itemvalue="Dart Command Line App.app_test.dart" />
       <item itemvalue="Flutter.main.dart" />
       <item itemvalue="Flutter.main.dart (1)" />
-      <item itemvalue="Flutter Test.getArticlesForSectionId" />
       <item itemvalue="Flutter Test.initialize" />
       <item itemvalue="Flutter Test.tests in flutter_zendesk_test.dart" />
       <item itemvalue="Flutter Test.Verify Platform version" />
+      <item itemvalue="Flutter Test.deserialize" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Flutter Test.deserialize" />
         <item itemvalue="Flutter Test.Verify Platform version" />
         <item itemvalue="Dart Command Line App.app_test.dart" />
         <item itemvalue="Flutter Test.initialize" />
         <item itemvalue="Flutter Test.tests in flutter_zendesk_test.dart" />
-        <item itemvalue="Flutter Test.getArticlesForSectionId" />
       </list>
     </recent_temporary>
   </component>
@@ -134,9 +178,9 @@
       <workItem from="1557972564194" duration="74000" />
       <workItem from="1559706690338" duration="1278000" />
       <workItem from="1559747010731" duration="9000" />
-      <workItem from="1562118454417" duration="13469000" />
-      <workItem from="1572846342757" duration="4637000" />
-      <workItem from="1573099266067" duration="1445000" />
+      <workItem from="1562118454417" duration="15451000" />
+      <workItem from="1581224409570" duration="470000" />
+      <workItem from="1581224888737" duration="1479000" />
     </task>
     <task id="LOCAL-00001" summary="development preview">
       <created>1556718519231</created>
@@ -215,68 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1562138070840</updated>
     </task>
-    <task id="LOCAL-00012" summary="feat: ticket custom field">
-      <created>1572847689291</created>
+    <task id="LOCAL-00012" summary="revert to zendesk 2.3.1">
+      <created>1562139590467</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1572847689291</updated>
+      <updated>1562139590467</updated>
     </task>
-    <task id="LOCAL-00013" summary="feat: ticket custom field">
-      <created>1572848068400</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1572848068400</updated>
-    </task>
-    <task id="LOCAL-00014" summary="feat: ticket custom field">
-      <created>1572849422769</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1572849422769</updated>
-    </task>
-    <task id="LOCAL-00015" summary="feat: ticket custom field">
-      <created>1572850696197</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1572850696197</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="13" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="getPlatformVersion - 2019.05.01 at 22h 13m 14s.xml">
-      <configuration name="getPlatformVersion" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="getArticlesBySectionId - 2019.05.01 at 22h 30m 11s.xml">
-      <configuration name="getArticlesBySectionId" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="getArticlesBySectionId - 2019.05.01 at 22h 30m 39s.xml">
-      <configuration name="getArticlesBySectionId" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="getArticlesForSectionId - 2019.05.01 at 22h 30m 47s.xml">
-      <configuration name="getArticlesForSectionId" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="Verify_Platform_version - 2019.05.01 at 22h 56m 27s.xml">
-      <configuration name="Verify Platform version" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="tests_in_flutter_zendesk_test_dart - 2019.05.02 at 09h 34m 36s.xml">
-      <configuration name="tests in flutter_zendesk_test.dart" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="initialize - 2019.05.02 at 09h 35m 55s.xml">
-      <configuration name="initialize" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="initialize - 2019.05.02 at 09h 36m 06s.xml">
-      <configuration name="initialize" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="initialize - 2019.05.02 at 09h 36m 18s.xml">
-      <configuration name="initialize" configurationId="FlutterTestConfigType" />
-    </history-entry>
-    <history-entry file="Verify_Platform_version - 2019.05.02 at 09h 43m 21s.xml">
-      <configuration name="Verify Platform version" configurationId="FlutterTestConfigType" />
-    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -291,19 +282,6 @@
       </list>
     </option>
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="circleci" />
     <MESSAGE value="development preview" />
@@ -315,24 +293,29 @@
     <MESSAGE value="token error" />
     <MESSAGE value="fix token" />
     <MESSAGE value="zendesk 3.0" />
-    <MESSAGE value="feat: ticket custom field" />
-    <MESSAGE value="chore(deps): migrating from 2 to 3.0.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(deps): migrating from 2 to 3.0.3" />
+    <MESSAGE value="revert to zendesk 2.3.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="revert to zendesk 2.3.1" />
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>11</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="322" y="184" key="#Project_Structure" timestamp="1581225088167">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state x="322" y="184" key="#Project_Structure/0.23.1680.991@0.23.1680.991" timestamp="1581225088167" />
+    <state width="1312" height="253" key="GridCell.Tab.0.bottom" timestamp="1581226520992">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state width="1312" height="253" key="GridCell.Tab.0.bottom/0.23.1680.991@0.23.1680.991" timestamp="1581226520992" />
+    <state width="1312" height="253" key="GridCell.Tab.0.center" timestamp="1581226520991">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state width="1312" height="253" key="GridCell.Tab.0.center/0.23.1680.991@0.23.1680.991" timestamp="1581226520991" />
+    <state width="1312" height="253" key="GridCell.Tab.0.left" timestamp="1581226520990">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state width="1312" height="253" key="GridCell.Tab.0.left/0.23.1680.991@0.23.1680.991" timestamp="1581226520990" />
+    <state width="1312" height="253" key="GridCell.Tab.0.right" timestamp="1581226520991">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state width="1312" height="253" key="GridCell.Tab.0.right/0.23.1680.991@0.23.1680.991" timestamp="1581226520991" />
   </component>
 </project>

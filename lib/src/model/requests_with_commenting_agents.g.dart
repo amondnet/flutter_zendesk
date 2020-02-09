@@ -9,14 +9,15 @@ part of 'requests_with_commenting_agents.dart';
 ZdkRequestsWithCommentingAgents _$ZdkRequestsWithCommentingAgentsFromJson(
     Map json) {
   return ZdkRequestsWithCommentingAgents(
-      commentingAgents: (json['commenting_agents'] as List)
-              ?.map((e) => e == null ? null : ZdkSupportUser.fromJson(e as Map))
-              ?.toList() ??
-          [],
-      requests: (json['requests'] as List)
-              ?.map((e) => e == null ? null : ZdkRequest.fromJson(e as Map))
-              ?.toList() ??
-          []);
+    commentingAgents: (json['commenting_agents'] as List)
+            ?.map((e) => e == null ? null : ZdkSupportUser.fromJson(e as Map))
+            ?.toList() ??
+        [],
+    requests: (json['requests'] as List)
+            ?.map((e) => e == null ? null : ZdkRequest.fromJson(e as Map))
+            ?.toList() ??
+        [],
+  );
 }
 
 Map<String, dynamic> _$ZdkRequestsWithCommentingAgentsToJson(
