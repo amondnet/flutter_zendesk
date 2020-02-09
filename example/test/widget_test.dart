@@ -24,7 +24,8 @@ void main() {
     await tester.pumpWidget(MyApp(
         appId: envVars['appId'],
         clientId: envVars['clientId'],
-        zendeskUrl: envVars['zendeskUrl']));
+        zendeskUrl: envVars['zendeskUrl'],
+        jwt: envVars['jwt']));
 
     expect(
       find.byWidgetPredicate(

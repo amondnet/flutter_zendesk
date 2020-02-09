@@ -173,9 +173,11 @@ class FlutterZendesk {
     assert(token != null && token.isNotEmpty);
 
     try {
-      await channel.invokeMethod('setIdentity', {
-        'token': token,
-      });
+      await channel.invokeMethod(
+          'setIdentity',
+          {
+            'token': token,
+          } as Map<String, String>);
     } catch (e) {
       print('error : $e');
       throw e;
