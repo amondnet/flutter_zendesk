@@ -1,37 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f00e8215-90d2-4ed8-b540-2a3ba3701aa9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/attachment.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/attachment.g.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/test/attachment_test.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/model/attachment.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/model/attachment.g.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/attachment_test.dart" afterDir="false" />
+    <list default="true" id="f00e8215-90d2-4ed8-b540-2a3ba3701aa9" name="Default Changelist" comment="feat: attachment">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/flutter_zendesk.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/flutter_zendesk.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/article.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/article.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment_with_user.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment_with_user.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/create_request.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/create_request.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/request.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/request.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/requests_with_commenting_agents.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/requests_with_commenting_agents.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/support_user.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/support_user.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_zendesk.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_zendesk.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/article.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/article.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/comment.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/comment.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/comment_with_user.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/comment_with_user.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/create_request.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/create_request.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/request.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/request.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/requests_with_commenting_agents.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/requests_with_commenting_agents.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/support_user.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/support_user.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/test/widget_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/article.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/attachment.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment_with_user.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/create_request.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/custom_field.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/request.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/requests_with_commenting_agents.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/support_user.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/test/widget_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/article.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/attachment.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/comment.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/comment_with_user.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/create_request.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/custom_field.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/request.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/requests_with_commenting_agents.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/support_user.g.dart" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +54,9 @@
       <find>swift</find>
     </findStrings>
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="ONTO" value="refs/remotes/origin/master" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -85,7 +80,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
@@ -96,7 +91,12 @@
       <recent name="$PROJECT_DIR$/example/test_driver" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter Test.deserialize">
+  <component name="RunManager" selected="Dart Command Line App.app.dart">
+    <configuration name="app.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
+      <option name="filePath" value="$PROJECT_DIR$/example/test_driver/app.dart" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/example" />
+      <method v="2" />
+    </configuration>
     <configuration name="app_test.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/example/test_driver/app_test.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/example" />
@@ -125,26 +125,22 @@
       <option name="testFile" value="$PROJECT_DIR$/test/flutter_zendesk_test.dart" />
       <method v="2" />
     </configuration>
-    <configuration name="tests in flutter_zendesk_test.dart" type="FlutterTestConfigType" factoryName="Flutter Test" temporary="true" nameIsGenerated="true">
-      <option name="testFile" value="$PROJECT_DIR$/test/flutter_zendesk_test.dart" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Dart Command Line App.app_test.dart" />
       <item itemvalue="Flutter.main.dart" />
       <item itemvalue="Flutter.main.dart (1)" />
       <item itemvalue="Flutter Test.initialize" />
-      <item itemvalue="Flutter Test.tests in flutter_zendesk_test.dart" />
       <item itemvalue="Flutter Test.Verify Platform version" />
       <item itemvalue="Flutter Test.deserialize" />
+      <item itemvalue="Dart Command Line App.app.dart" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Dart Command Line App.app.dart" />
+        <item itemvalue="Dart Command Line App.app_test.dart" />
         <item itemvalue="Flutter Test.deserialize" />
         <item itemvalue="Flutter Test.Verify Platform version" />
-        <item itemvalue="Dart Command Line App.app_test.dart" />
         <item itemvalue="Flutter Test.initialize" />
-        <item itemvalue="Flutter Test.tests in flutter_zendesk_test.dart" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +176,7 @@
       <workItem from="1559747010731" duration="9000" />
       <workItem from="1562118454417" duration="15451000" />
       <workItem from="1581224409570" duration="470000" />
-      <workItem from="1581224888737" duration="1479000" />
+      <workItem from="1581224888737" duration="4080000" />
     </task>
     <task id="LOCAL-00001" summary="development preview">
       <created>1556718519231</created>
@@ -294,28 +290,57 @@
     <MESSAGE value="fix token" />
     <MESSAGE value="zendesk 3.0" />
     <MESSAGE value="revert to zendesk 2.3.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="revert to zendesk 2.3.1" />
+    <MESSAGE value="feat: attachment" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: attachment" />
   </component>
   <component name="WindowStateProjectService">
     <state x="322" y="184" key="#Project_Structure" timestamp="1581225088167">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state x="322" y="184" key="#Project_Structure/0.23.1680.991@0.23.1680.991" timestamp="1581225088167" />
-    <state width="1312" height="253" key="GridCell.Tab.0.bottom" timestamp="1581226520992">
+    <state x="330" y="33" key="CommitChangelistDialog2" timestamp="1581226592729">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="1312" height="253" key="GridCell.Tab.0.bottom/0.23.1680.991@0.23.1680.991" timestamp="1581226520992" />
-    <state width="1312" height="253" key="GridCell.Tab.0.center" timestamp="1581226520991">
+    <state x="330" y="33" key="CommitChangelistDialog2/0.23.1680.991@0.23.1680.991" timestamp="1581226592729" />
+    <state width="1312" height="270" key="GridCell.Tab.0.bottom" timestamp="1581234858908">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="1312" height="253" key="GridCell.Tab.0.center/0.23.1680.991@0.23.1680.991" timestamp="1581226520991" />
-    <state width="1312" height="253" key="GridCell.Tab.0.left" timestamp="1581226520990">
+    <state width="1312" height="270" key="GridCell.Tab.0.bottom/0.23.1680.991@0.23.1680.991" timestamp="1581234858908" />
+    <state width="1312" height="270" key="GridCell.Tab.0.center" timestamp="1581234858907">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="1312" height="253" key="GridCell.Tab.0.left/0.23.1680.991@0.23.1680.991" timestamp="1581226520990" />
-    <state width="1312" height="253" key="GridCell.Tab.0.right" timestamp="1581226520991">
+    <state width="1312" height="270" key="GridCell.Tab.0.center/0.23.1680.991@0.23.1680.991" timestamp="1581234858907" />
+    <state width="1312" height="270" key="GridCell.Tab.0.left" timestamp="1581234858906">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state width="1312" height="253" key="GridCell.Tab.0.right/0.23.1680.991@0.23.1680.991" timestamp="1581226520991" />
+    <state width="1312" height="270" key="GridCell.Tab.0.left/0.23.1680.991@0.23.1680.991" timestamp="1581234858906" />
+    <state width="1312" height="270" key="GridCell.Tab.0.right" timestamp="1581234858908">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state width="1312" height="270" key="GridCell.Tab.0.right/0.23.1680.991@0.23.1680.991" timestamp="1581234858908" />
+    <state x="178" y="111" key="MergeDialog" timestamp="1581229020912">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state x="178" y="111" key="MergeDialog/0.23.1680.991@0.23.1680.991" timestamp="1581229020912" />
+    <state x="557" y="232" width="596" height="572" key="MultipleFileMergeDialog" timestamp="1581229023307">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state x="557" y="232" width="596" height="572" key="MultipleFileMergeDialog/0.23.1680.991@0.23.1680.991" timestamp="1581229023307" />
+    <state x="351" y="157" key="SettingsEditor" timestamp="1581228791784">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state x="351" y="157" key="SettingsEditor/0.23.1680.991@0.23.1680.991" timestamp="1581228791784" />
+    <state x="492" y="368" key="git4idea.rebase.GitRebaseDialog" timestamp="1581228941797">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state x="492" y="368" key="git4idea.rebase.GitRebaseDialog/0.23.1680.991@0.23.1680.991" timestamp="1581228941797" />
+    <state x="612" y="249" key="git4idea.rebase.GitRebaseEditor" timestamp="1581228944444">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state x="612" y="249" key="git4idea.rebase.GitRebaseEditor/0.23.1680.991@0.23.1680.991" timestamp="1581228944444" />
+    <state x="666" y="438" key="git4idea.rebase.GitUnstructuredEditor" timestamp="1581229015059">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state x="666" y="438" key="git4idea.rebase.GitUnstructuredEditor/0.23.1680.991@0.23.1680.991" timestamp="1581229015059" />
   </component>
 </project>
