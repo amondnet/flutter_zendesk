@@ -1,3 +1,4 @@
+import 'package:flutter_zendesk/src/model/attachment.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'comment.g.dart';
@@ -18,9 +19,13 @@ class ZdkComment {
   final List<int> lastCommentingAgentsIds;
   @JsonKey(name: 'first_comment')
   final ZdkComment firstComment;
+  @JsonKey(name: 'attachments')
+  final List<Attachment> attachments;
+
+
 
   ZdkComment(this.body, this.id, this.authorId, this.requestId, this.htmlBody,
-      this.createdAt, this.lastCommentingAgentsIds, this.firstComment);
+      this.createdAt, this.lastCommentingAgentsIds, this.firstComment, this.attachments);
 
   factory ZdkComment.fromJson(Map json) => _$ZdkCommentFromJson(json);
 

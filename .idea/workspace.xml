@@ -1,29 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f00e8215-90d2-4ed8-b540-2a3ba3701aa9" name="Default Changelist" comment="feat: attachment">
+    <list default="true" id="f00e8215-90d2-4ed8-b540-2a3ba3701aa9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/via.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/model/via.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/test/widget_test.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/article.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/attachment.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment_with_user.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/create_request.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/custom_field.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/request.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/requests_with_commenting_agents.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/support_user.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/test/widget_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/test/widget_test.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/article.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/attachment.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/comment.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/comment_with_user.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/create_request.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/custom_field.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/request.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/requests_with_commenting_agents.g.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/support_user.g.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/comment.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/comment.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +160,7 @@
       <workItem from="1559747010731" duration="9000" />
       <workItem from="1562118454417" duration="15451000" />
       <workItem from="1581224409570" duration="470000" />
-      <workItem from="1581224888737" duration="4080000" />
+      <workItem from="1581224888737" duration="4395000" />
     </task>
     <task id="LOCAL-00001" summary="development preview">
       <created>1556718519231</created>
@@ -262,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562139590467</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: attachment">
+      <created>1581235288628</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1581235288628</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,10 +289,10 @@
       <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state x="322" y="184" key="#Project_Structure/0.23.1680.991@0.23.1680.991" timestamp="1581225088167" />
-    <state x="330" y="33" key="CommitChangelistDialog2" timestamp="1581235269285">
+    <state x="330" y="33" key="CommitChangelistDialog2" timestamp="1581235288048">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
-    <state x="330" y="33" key="CommitChangelistDialog2/0.23.1680.991@0.23.1680.991" timestamp="1581235269285" />
+    <state x="330" y="33" key="CommitChangelistDialog2/0.23.1680.991@0.23.1680.991" timestamp="1581235288048" />
     <state width="1312" height="270" key="GridCell.Tab.0.bottom" timestamp="1581234858908">
       <screen x="0" y="23" width="1680" height="991" />
     </state>
@@ -330,6 +321,10 @@
       <screen x="0" y="23" width="1680" height="991" />
     </state>
     <state x="351" y="157" key="SettingsEditor/0.23.1680.991@0.23.1680.991" timestamp="1581228791784" />
+    <state x="450" y="240" key="Vcs.Push.Dialog.v2" timestamp="1581235289780">
+      <screen x="0" y="23" width="1680" height="991" />
+    </state>
+    <state x="450" y="240" key="Vcs.Push.Dialog.v2/0.23.1680.991@0.23.1680.991" timestamp="1581235289780" />
     <state x="492" y="368" key="git4idea.rebase.GitRebaseDialog" timestamp="1581228941797">
       <screen x="0" y="23" width="1680" height="991" />
     </state>

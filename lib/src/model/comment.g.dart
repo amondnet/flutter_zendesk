@@ -20,6 +20,9 @@ ZdkComment _$ZdkCommentFromJson(Map json) {
     json['first_comment'] == null
         ? null
         : ZdkComment.fromJson(json['first_comment'] as Map),
+    (json['attachments'] as List)
+        ?.map((e) => e == null ? null : Attachment.fromJson(e as Map))
+        ?.toList(),
   );
 }
 
@@ -33,4 +36,5 @@ Map<String, dynamic> _$ZdkCommentToJson(ZdkComment instance) =>
       'created_at': instance.createdAt,
       'last_commenting_agents_ids': instance.lastCommentingAgentsIds,
       'first_comment': instance.firstComment?.toJson(),
+      'attachments': instance.attachments?.map((e) => e?.toJson())?.toList(),
     };
