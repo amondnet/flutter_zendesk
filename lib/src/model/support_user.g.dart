@@ -8,14 +8,15 @@ part of 'support_user.dart';
 
 ZdkSupportUser _$ZdkSupportUserFromJson(Map json) {
   return ZdkSupportUser(
-      tags: json['tags'] as String,
-      name: json['name'] as String,
-      id: json['id'] as int,
-      agent: json['agent'] as bool,
-      userFields: (json['user_fields'] as Map)?.map(
-        (k, e) => MapEntry(k as String, e),
-      ),
-      avatarUrl: json['avatar_url'] as String);
+    tags: json['tags'] as String,
+    name: json['name'] as String,
+    id: json['id'] as int,
+    agent: json['agent'] as bool,
+    userFields: (json['user_fields'] as Map)?.map(
+      (k, e) => MapEntry(k as String, e),
+    ),
+    avatarUrl: json['avatar_url'] as String,
+  );
 }
 
 Map<String, dynamic> _$ZdkSupportUserToJson(ZdkSupportUser instance) =>
@@ -25,5 +26,5 @@ Map<String, dynamic> _$ZdkSupportUserToJson(ZdkSupportUser instance) =>
       'id': instance.id,
       'agent': instance.agent,
       'avatar_url': instance.avatarUrl,
-      'user_fields': instance.userFields
+      'user_fields': instance.userFields,
     };

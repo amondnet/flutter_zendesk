@@ -2,38 +2,54 @@ PODS:
   - Flutter (1.0.0)
   - flutter_zendesk (0.0.1):
     - Flutter
-    - ZendeskSDK (= 3.0.3)
-    - ZendeskSDK/Core (= 3.0.3)
-    - ZendeskSDK/Providers (= 3.0.3)
-  - ZendeskSDK (3.0.3):
-    - ZendeskSDK/Providers (= 3.0.3)
-    - ZendeskSDK/UI (= 3.0.3)
-  - ZendeskSDK/Core (3.0.3)
-  - ZendeskSDK/Providers (3.0.3):
-    - ZendeskSDK/Core
-  - ZendeskSDK/UI (3.0.3):
-    - ZendeskSDK/Core
-    - ZendeskSDK/Providers
+    - ZendeskSupportProvidersSDK (= 5.0.0)
+    - ZendeskSupportSDK (= 5.0.0)
+  - ZendeskCommonUISDK (4.0.0):
+    - ZendeskSDKConfigurationsSDK (~> 1.1.2)
+  - ZendeskCoreSDK (2.2.3)
+  - ZendeskMessagingAPISDK (3.0.0):
+    - ZendeskSDKConfigurationsSDK (~> 1.1.2)
+  - ZendeskMessagingSDK (3.0.0):
+    - ZendeskCommonUISDK (~> 4.0.0)
+    - ZendeskMessagingAPISDK (~> 3.0.0)
+  - ZendeskSDKConfigurationsSDK (1.1.4)
+  - ZendeskSupportProvidersSDK (5.0.0):
+    - ZendeskCoreSDK (~> 2.2.1)
+  - ZendeskSupportSDK (5.0.0):
+    - ZendeskMessagingSDK (~> 3.0.0)
+    - ZendeskSupportProvidersSDK (~> 5.0.0)
 
 DEPENDENCIES:
-  - Flutter (from `.symlinks/flutter/ios-release`)
+  - Flutter (from `Flutter`)
   - flutter_zendesk (from `.symlinks/plugins/flutter_zendesk/ios`)
 
 SPEC REPOS:
   trunk:
-    - ZendeskSDK
+    - ZendeskCommonUISDK
+    - ZendeskCoreSDK
+    - ZendeskMessagingAPISDK
+    - ZendeskMessagingSDK
+    - ZendeskSDKConfigurationsSDK
+    - ZendeskSupportProvidersSDK
+    - ZendeskSupportSDK
 
 EXTERNAL SOURCES:
   Flutter:
-    :path: ".symlinks/flutter/ios-release"
+    :path: Flutter
   flutter_zendesk:
     :path: ".symlinks/plugins/flutter_zendesk/ios"
 
 SPEC CHECKSUMS:
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
-  flutter_zendesk: 6b5036c5921428a848557d17af1f199bcaac6427
-  ZendeskSDK: 12f516028e26e2e47a861cc0f5da968f4db3989a
+  flutter_zendesk: 9391e87a35a3d7448b5c30ab56c1bb8f1663a483
+  ZendeskCommonUISDK: 3c432801e31abff97d6e30441ea102eaef6b99e2
+  ZendeskCoreSDK: 5fa27aeb70392e8770e17c26bfe6c4c78b21975a
+  ZendeskMessagingAPISDK: 7c0cbd1d2c941f05b36f73e7db5faee5863fe8b0
+  ZendeskMessagingSDK: 6f168161d834dd66668344f645f7a6b6b121b58a
+  ZendeskSDKConfigurationsSDK: 0fe60a278b9b98e3fca2ee6c0785ff2e84ecc9c7
+  ZendeskSupportProvidersSDK: 96b704d58bf0d44978de135607059f379c766e58
+  ZendeskSupportSDK: a87ab1e4badace92c75eb11dc77ede1e995b2adc
 
-PODFILE CHECKSUM: ebd43b443038e611b86ede96e613bd6033c49497
+PODFILE CHECKSUM: 1b66dae606f75376c5f2135a8290850eeb09ae83
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.9.1

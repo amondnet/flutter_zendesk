@@ -8,24 +8,25 @@ part of 'request.dart';
 
 ZdkRequest _$ZdkRequestFromJson(Map json) {
   return ZdkRequest(
-      createdAt: json['created_at'] as String,
-      commentCount: json['comment_count'] as int,
-      updatedAt: json['updated_at'] as String,
-      publicUpdatedAt: json['public_updated_at'] as String,
-      id: json['id'] as String,
-      requesterId: json['requester_id'] as int,
-      status: json['status'] as String,
-      collaboratorIds:
-          (json['collaborator_ids'] as List)?.map((e) => e as int)?.toList(),
-      subject: json['subject'] as String,
-      description: json['description'] as String,
-      lastComment: json['last_comment'] == null
-          ? null
-          : ZdkComment.fromJson(json['last_comment'] as Map),
-      customTicketFields: (json['custom_fields'] as List)
-              ?.map((e) => e == null ? null : ZdkCustomField.fromJson(e as Map))
-              ?.toList() ??
-          []);
+    createdAt: json['created_at'] as String,
+    commentCount: json['comment_count'] as int,
+    updatedAt: json['updated_at'] as String,
+    publicUpdatedAt: json['public_updated_at'] as String,
+    id: json['id'] as String,
+    requesterId: json['requester_id'] as int,
+    status: json['status'] as String,
+    collaboratorIds:
+        (json['collaborator_ids'] as List)?.map((e) => e as int)?.toList(),
+    subject: json['subject'] as String,
+    description: json['description'] as String,
+    lastComment: json['last_comment'] == null
+        ? null
+        : ZdkComment.fromJson(json['last_comment'] as Map),
+    customFields: (json['custom_fields'] as List)
+            ?.map((e) => e == null ? null : CustomField.fromJson(e as Map))
+            ?.toList() ??
+        [],
+  );
 }
 
 Map<String, dynamic> _$ZdkRequestToJson(ZdkRequest instance) =>
@@ -41,6 +42,5 @@ Map<String, dynamic> _$ZdkRequestToJson(ZdkRequest instance) =>
       'subject': instance.subject,
       'description': instance.description,
       'last_comment': instance.lastComment?.toJson(),
-      'custom_fields':
-          instance.customTicketFields?.map((e) => e?.toJson())?.toList()
+      'custom_fields': instance.customFields?.map((e) => e?.toJson())?.toList(),
     };

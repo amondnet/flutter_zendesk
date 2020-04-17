@@ -15,7 +15,7 @@ class ZdkCreateRequest {
   // TODO
   final List attachments;
   @JsonKey(defaultValue: [])
-  final List<ZdkCustomField> customTicketFields;
+  final List<CustomField> customTicketFields;
 
   ZdkCreateRequest(
     this.requestDescription, {

@@ -6,9 +6,15 @@ part of 'custom_field.dart';
 // JsonSerializableGenerator
 // **************************************************************************
 
-ZdkCustomField _$ZdkCustomFieldFromJson(Map json) {
-  return ZdkCustomField(json['id'] as int, json['value'] as String);
+CustomField _$CustomFieldFromJson(Map json) {
+  return CustomField(
+    json['fieldId'] as int,
+    json['value'] as String,
+  );
 }
 
-Map<String, dynamic> _$ZdkCustomFieldToJson(ZdkCustomField instance) =>
-    <String, dynamic>{'id': instance.id, 'value': instance.value};
+Map<String, dynamic> _$CustomFieldToJson(CustomField instance) =>
+    <String, dynamic>{
+      'fieldId': instance.fieldId,
+      'value': instance.value,
+    };
