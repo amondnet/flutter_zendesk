@@ -3,13 +3,13 @@ import 'package:json_annotation/json_annotation.dart';
 part 'custom_field.g.dart';
 
 @JsonSerializable(anyMap: true)
-class ZdkCustomField {
-  final int id;
+class CustomField {
+  final int fieldId;
   final String value;
 
-  ZdkCustomField(this.id, this.value);
+  CustomField(this.fieldId, this.value);
 
-  factory ZdkCustomField.fromJson(Map json) => _$ZdkCustomFieldFromJson(json);
+  factory CustomField.fromJson(Map json) => _$CustomFieldFromJson(json);
 
-  Map<String, dynamic> toJson() => _$ZdkCustomFieldToJson(this);
+  Map<String, dynamic> toJson() => _$CustomFieldToJson(this);
 }

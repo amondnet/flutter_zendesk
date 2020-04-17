@@ -41,7 +41,7 @@ class FlutterZendesk {
   static Future<ZdkRequest> createRequest(String requestDescription,
       {String subject,
       List<String> tags: const [],
-      List<ZdkCustomField> customField: const []}) async {
+      List<CustomField> customField: const []}) async {
     try {
       final dynamic result =
           await channel.invokeMethod('createRequest', <String, dynamic>{

@@ -28,7 +28,7 @@ class ZdkRequest {
   final ZdkComment lastComment;
 
   @JsonKey(name: 'custom_fields', defaultValue: [])
-  final List<ZdkCustomField> customTicketFields;
+  final List<CustomField> customFields;
 
   ZdkRequest(
       {this.createdAt,
@@ -42,7 +42,7 @@ class ZdkRequest {
       this.subject,
       this.description,
       this.lastComment,
-      this.customTicketFields = const []});
+      this.customFields = const []});
 
   factory ZdkRequest.fromJson(Map json) => _$ZdkRequestFromJson(json);
 
