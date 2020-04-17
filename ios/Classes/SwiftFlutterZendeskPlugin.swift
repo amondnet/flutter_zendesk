@@ -1,8 +1,8 @@
 import Flutter
 import UIKit
 import ZendeskCoreSDK
-import ZendeskProviderSDK
-import ZendeskSDK
+import SupportProvidersSDK
+import SupportSDK
 
 @objc public class SwiftFlutterZendeskPlugin: NSObject, FlutterPlugin {
     private var aObjNavi: UINavigationController?
@@ -34,7 +34,7 @@ import ZendeskSDK
             let zendeskUrl = arguments["zendeskUrl"]!
 
             Zendesk.initialize(appId: appId, clientId: clientId, zendeskUrl: zendeskUrl)
-            SupportUI.initialize(withZendesk: Zendesk.instance)
+            Support.initialize(withZendesk: Zendesk.instance)
             // SupportUI.initialize(withZendesk: Zendesk.instance)
             result(appId)
         } else if call.method == "setIdentity" {
@@ -64,9 +64,9 @@ import ZendeskSDK
             request.tags = tags
             if customFields != nil {
                 let fields = customFields!.map {
-                    ZDKCustomField(fieldId: $0["id"] as? NSNumber, andValue: $0["value"] as? String)
+                    CustomField(fieldId: $0["fieldId"] as! Int64, value: $0["value"] as! String)
                 }
-                request.customTicketFields = fields as? [ZDKCustomField]
+                request.customFields = fields as? [CustomField]
             }
 
             provider.createRequest(request) { response, error in
