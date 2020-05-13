@@ -2,46 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f00e8215-90d2-4ed8-b540-2a3ba3701aa9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/net/amond/flutter_zendesk/Request.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/androidTest/kotlin/net/amond/flutter_zendesk_example/EmbeddingV1ActivityTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/androidTest/kotlin/net/amond/flutter_zendesk_example/MainActivityTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/kotlin/net/amond/flutter_zendesk_example/EmbedderV1Activity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/android/src/main/kotlin/net/amond/flutter_zendesk/Request.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/androidTest/kotlin/net/amond/flutter_zendesk_example/EmbeddingV1ActivityTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/androidTest/kotlin/net/amond/flutter_zendesk_example/MainActivityTest.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/kotlin/net/amond/flutter_zendesk_example/EmbedderV1Activity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/net/amond/flutter_zendesk/FlutterZendeskPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/net/amond/flutter_zendesk/FlutterZendeskPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/example/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/kotlin/net/amond/flutter_zendesk_example/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/android/src/main/kotlin/net/amond/flutter_zendesk/FlutterZendeskPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/android/src/main/kotlin/net/amond/flutter_zendesk/FlutterZendeskPlugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/kotlin/net/amond/flutter_zendesk_example/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/pubspec.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/flutter_zendesk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/flutter_zendesk.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/ios/flutter_zendesk.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/ios/flutter_zendesk.podspec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/flutter_zendesk.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/flutter_zendesk.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/article.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/article.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment_with_user.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/comment_with_user.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/create_request.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/create_request.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/create_request.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/create_request.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/custom_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/custom_field.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/custom_field.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/custom_field.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/request.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/request.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/request.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/request.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/requests_with_commenting_agents.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/requests_with_commenting_agents.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/support_user.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/support_user.g.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Podfile" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flutter_zendesk.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flutter_zendesk.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftFlutterZendeskPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftFlutterZendeskPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/flutter_zendesk.podspec" beforeDir="false" afterPath="$PROJECT_DIR$/ios/flutter_zendesk.podspec" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/flutter_zendesk.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_zendesk.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/article.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/article.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/comment.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/comment.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/comment_with_user.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/comment_with_user.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/create_request.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/create_request.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/create_request.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/create_request.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/custom_field.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/custom_field.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/custom_field.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/custom_field.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/request.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/request.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/request.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/request.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/requests_with_commenting_agents.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/requests_with_commenting_agents.g.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/model/support_user.g.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/support_user.g.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
@@ -84,6 +88,10 @@
   </component>
   <component name="ProjectId" id="1T8eqae5l8IM7enKFMoqJw7zr9i" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -92,13 +100,16 @@
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/example/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/example/lib" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib/" />
       <recent name="$PROJECT_DIR$/lib/src" />
@@ -106,7 +117,7 @@
       <recent name="$PROJECT_DIR$/example/test_driver" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter.main.dart">
+  <component name="RunManager" selected="Flutter.main.dart (1)">
     <configuration name="app_test.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/example/test_driver/app_test.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/example" />
@@ -117,6 +128,7 @@
       <method v="2" />
     </configuration>
     <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter" singleton="false">
+      <option name="additionalArgs" value="ddf97280bb84a4dc04c19316d28416af942ec5e846d11c84 mobile_sdk_client_6c1bee8b8d592712f5b3 https://passionfactory.zendesk.com flutter run" />
       <option name="filePath" value="$PROJECT_DIR$/example/lib/main.dart" />
       <method v="2" />
     </configuration>
@@ -191,6 +203,7 @@
       <workItem from="1562118454417" duration="13469000" />
       <workItem from="1572846342757" duration="4637000" />
       <workItem from="1573099266067" duration="1445000" />
+      <workItem from="1589368045947" duration="911000" />
     </task>
     <task id="LOCAL-00001" summary="development preview">
       <created>1556718519231</created>
@@ -373,29 +386,54 @@
     <option name="LAST_COMMIT_MESSAGE" value="chore(deps): migrating from 2 to 3.0.3" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1550" height="403" key="GridCell.Tab.0.bottom" timestamp="1587135491855">
-      <screen x="0" y="23" width="1920" height="1021" />
+    <state x="440" y="191" width="1480" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589357234527">
+      <screen x="0" y="23" width="1920" height="1019" />
     </state>
+    <state x="440" y="191" width="1480" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1019@0.23.1920.1019" timestamp="1589357234527" />
+    <state x="677" y="191" width="1204" height="676" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1020@0.23.1920.1020" timestamp="1589356194633" />
+    <state x="524" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1021@0.23.1920.1021" timestamp="1589356099975" />
+    <state x="893" y="335" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589347150061">
+      <screen x="0" y="23" width="1920" height="1019" />
+    </state>
+    <state x="893" y="335" key="#com.intellij.fileTypes.FileTypeChooser/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1019@0.23.1920.1019" timestamp="1589347150061" />
+    <state width="1024" height="303" key="GridCell.Tab.0.bottom" timestamp="1589368913715">
+      <screen x="0" y="23" width="1920" height="1020" />
+    </state>
+    <state width="999" height="203" key="GridCell.Tab.0.bottom/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1019@0.23.1920.1019" timestamp="1589367013000" />
+    <state width="1024" height="303" key="GridCell.Tab.0.bottom/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1020@0.23.1920.1020" timestamp="1589368913715" />
     <state width="1550" height="403" key="GridCell.Tab.0.bottom/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1587135491855" />
-    <state width="1550" height="403" key="GridCell.Tab.0.center" timestamp="1587135491855">
-      <screen x="0" y="23" width="1920" height="1021" />
+    <state width="1024" height="303" key="GridCell.Tab.0.center" timestamp="1589368913714">
+      <screen x="0" y="23" width="1920" height="1020" />
     </state>
+    <state width="999" height="203" key="GridCell.Tab.0.center/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1019@0.23.1920.1019" timestamp="1589367013000" />
+    <state width="1024" height="303" key="GridCell.Tab.0.center/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1020@0.23.1920.1020" timestamp="1589368913714" />
     <state width="1550" height="403" key="GridCell.Tab.0.center/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1587135491855" />
-    <state width="1550" height="403" key="GridCell.Tab.0.left" timestamp="1587135491854">
-      <screen x="0" y="23" width="1920" height="1021" />
+    <state width="1024" height="303" key="GridCell.Tab.0.left" timestamp="1589368913713">
+      <screen x="0" y="23" width="1920" height="1020" />
     </state>
+    <state width="999" height="203" key="GridCell.Tab.0.left/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1019@0.23.1920.1019" timestamp="1589367013000" />
+    <state width="1024" height="303" key="GridCell.Tab.0.left/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1020@0.23.1920.1020" timestamp="1589368913713" />
     <state width="1550" height="403" key="GridCell.Tab.0.left/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1587135491854" />
-    <state width="1550" height="403" key="GridCell.Tab.0.right" timestamp="1587135491855">
-      <screen x="0" y="23" width="1920" height="1021" />
+    <state width="1024" height="303" key="GridCell.Tab.0.right" timestamp="1589368913714">
+      <screen x="0" y="23" width="1920" height="1020" />
     </state>
+    <state width="999" height="203" key="GridCell.Tab.0.right/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1019@0.23.1920.1019" timestamp="1589367013000" />
+    <state width="1024" height="303" key="GridCell.Tab.0.right/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1020@0.23.1920.1020" timestamp="1589368913714" />
     <state width="1550" height="403" key="GridCell.Tab.0.right/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1587135491855" />
-    <state x="1015" y="274" width="586" height="518" key="find.popup" timestamp="1587134552937">
-      <screen x="0" y="23" width="1920" height="1021" />
+    <state x="477" y="123" width="866" height="815" key="VCS.FileHistoryDialog" timestamp="1589368959751">
+      <screen x="0" y="23" width="1920" height="1020" />
     </state>
+    <state x="477" y="123" width="866" height="815" key="VCS.FileHistoryDialog/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1020@0.23.1920.1020" timestamp="1589368959751" />
+    <state x="1015" y="274" width="586" height="518" key="find.popup" timestamp="1589368949885">
+      <screen x="0" y="23" width="1920" height="1020" />
+    </state>
+    <state x="1015" y="274" width="586" height="517" key="find.popup/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1019@0.23.1920.1019" timestamp="1589366863159" />
+    <state x="1015" y="274" width="586" height="518" key="find.popup/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1020@0.23.1920.1020" timestamp="1589368949885" />
     <state x="1015" y="274" width="586" height="518" key="find.popup/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1587134552937" />
-    <state x="966" y="249" width="670" height="676" key="search.everywhere.popup" timestamp="1587134148352">
-      <screen x="0" y="23" width="1920" height="1021" />
+    <state x="966" y="249" width="670" height="675" key="search.everywhere.popup" timestamp="1589364475559">
+      <screen x="0" y="23" width="1920" height="1019" />
     </state>
+    <state x="966" y="249" width="670" height="675" key="search.everywhere.popup/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1019@0.23.1920.1019" timestamp="1589364475559" />
     <state x="966" y="249" width="670" height="676" key="search.everywhere.popup/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1587134148352" />
   </component>
   <component name="masterDetails">

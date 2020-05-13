@@ -4,13 +4,16 @@ Demonstrates how to use the flutter_zendesk plugin.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Required Environment Variable
 
-A few resources to get you started if this is your first Flutter project:
+- APP_ID
+- CLIENT_ID
+- ZENDESK_URL
+- JWT
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+```
+APP_ID={YOUR_APP} CLIENT_ID={YOUR_CLIENT_ID} ZENDESK_URL={YOUR_ZENDESK_URL} flutter run 
+```
+
+  
