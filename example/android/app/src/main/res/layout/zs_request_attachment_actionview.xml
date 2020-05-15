@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:importantForAccessibility="noHideDescendants">
+
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:layout_margin="12dp"
+        app:srcCompat="@drawable/zs_request_conversations_disabled_menu_ic_add_attachments"
+        tools:ignore="ContentDescription" />
+
+    <FrameLayout
+        android:id="@+id/request_actionview_badge_container"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/request_actionview_compat_shadow"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:background="@drawable/zs_request_dropshadow"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/request_actionview_attachment_count"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_gravity="center"
+            android:background="@drawable/zs_request_attachment_actionview_badge"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            tools:ignore="SmallSp,UnusedAttribute"
+            tools:text="3" />
+
+    </FrameLayout>
+
+</merge>

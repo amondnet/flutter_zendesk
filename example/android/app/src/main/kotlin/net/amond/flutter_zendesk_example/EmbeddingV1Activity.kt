@@ -5,7 +5,7 @@ import dev.flutter.plugins.e2e.E2EPlugin
 import io.flutter.app.FlutterActivity
 import net.amond.flutter_zendesk.FlutterZendeskPlugin
 
-class EmbedderV1Activity : FlutterActivity() {
+class EmbeddingV1Activity : FlutterActivity() {
   @Override
   override fun onCreate(savedInstanceState: Bundle) {
     super.onCreate(savedInstanceState);

@@ -1,6 +1,8 @@
 package net.amond.flutter_zendesk
 
 import android.content.Context
+import android.util.Log
+import com.zendesk.logger.Logger
 import com.zendesk.service.ErrorResponse
 import com.zendesk.service.ZendeskCallback
 import io.flutter.embedding.engine.plugins.FlutterPlugin
@@ -27,14 +29,17 @@ import zendesk.support.request.RequestActivity
 import zendesk.support.requestlist.RequestListActivity
 
 
-@ImplicitReflectionSerializer
 class FlutterZendeskPlugin : FlutterPlugin, ActivityAware, MethodChannel.MethodCallHandler {
   private var activityContext: Context? = null
   private var applicationContext: Context? = null
   private var methodChannel: MethodChannel? = null
 
-  companion object {
+  init {
+    Logger.setLoggable(true);
+  }
 
+  companion object {
+    val tag = "FlutterZendeskPlugin"
     /** Plugin registration. */
     @JvmStatic
     fun registerWith(registrar: Registrar) {
@@ -54,6 +59,8 @@ class FlutterZendeskPlugin : FlutterPlugin, ActivityAware, MethodChannel.MethodC
 
   private fun onAttachedToEngine(applicationContext: Context,
       messenger: BinaryMessenger) {
+    Log.d(tag, "onAttachedToEngine")
+
     this.applicationContext = applicationContext
     methodChannel = MethodChannel(messenger, "net.amond.flutter_zendesk")
     methodChannel!!.setMethodCallHandler(this)
@@ -66,19 +73,26 @@ class FlutterZendeskPlugin : FlutterPlugin, ActivityAware, MethodChannel.MethodC
   }
 
   override fun onDetachedFromActivity() {
+    Log.d(tag, "onDetachedFromActivity")
+
     activityContext = null
   }
 
   override fun onReattachedToActivityForConfigChanges(binding: ActivityPluginBinding) {
+    Log.d(tag, "onReattachedToActivityForConfigChanges")
+
     activityContext = binding.activity
   }
 
   override fun onAttachedToActivity(binding: ActivityPluginBinding) {
+    Log.d(tag, "onAttachedToActivity")
     activityContext = binding.activity
   }
 
   override fun onDetachedFromActivityForConfigChanges() {
-    activityContext = null
+    Log.d(tag, "onDetachedFromActivityForConfigChanges")
+
+    // activityContext = null
   }
 
   override fun onMethodCall(call: MethodCall, result: Result) {
@@ -170,8 +184,8 @@ class FlutterZendeskPlugin : FlutterPlugin, ActivityAware, MethodChannel.MethodC
 
     provider.getAllRequests(object : ZendeskCallback<List<Request>>() {
       override fun onSuccess(requests: List<Request>) {
-        val dto = requests.map { Properties.store(it.toDTO()) }
-        result.success(dto)
+        //val dto = requests.map { Properties.store(it.toDTO()) }
+        result.success(null)
       }
 
       override fun onError(error: ErrorResponse) {
@@ -179,17 +193,23 @@ class FlutterZendeskPlugin : FlutterPlugin, ActivityAware, MethodChannel.MethodC
       }
     })
   }
+  val helpCenterBuilder = HelpCenterActivity.builder()
 
   private fun showHelpCenterScreen(call: MethodCall, result: Result) {
+    Log.i(tag, "showHelpCenterScreen")
     if (activityContext == null) {
+      Log.e(tag, "activityContext is null")
       return result.error("SHOW_HELP_CENTER_UI_ERROR", "context is null", null)
     } else {
+      Log.i(tag, "activityContext is exists")
       try {
-        val builder = HelpCenterActivity.builder()
         // TODO arguments
-        builder.show(activityContext!!)
+        helpCenterBuilder.show(activityContext!!)
+        Log.i(tag, "helpCenterBuilder.show()")
         result.success(null)
       } catch (e: Exception) {
+        Log.e(tag, "SHOW_HELP_CENTER_UI_ERROR")
+
         result.error("SHOW_HELP_CENTER_UI_ERROR", e.localizedMessage, null)
       }
     }

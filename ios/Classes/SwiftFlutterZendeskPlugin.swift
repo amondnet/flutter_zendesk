@@ -37,6 +37,9 @@ import SupportSDK
             Support.initialize(withZendesk: Zendesk.instance)
             // SupportUI.initialize(withZendesk: Zendesk.instance)
             result(appId)
+        } else if call.method == "isInitialized" {
+            
+            result(true)
         } else if call.method == "setIdentity" {
             let arguments = call.arguments as! [String: String]
             let token = arguments["token"]
@@ -79,7 +82,7 @@ import SupportSDK
                 }
             }
 
-        } else if call.method == "Show a ticket screen" {
+        } else if call.method == "showRequest" {
             // https://developer.zendesk.com/embeddables/docs/ios_support_sdk/requests#show-a-ticket-screen
             if requestScreen == nil {
                 requestScreen = RequestUi.buildRequestUi(with: [])
@@ -103,7 +106,7 @@ import SupportSDK
                 result(true)
             }
 
-        } else if call.method == "showTickets" {
+        } else if call.method == "showRequestList" {
             // https://developer.zendesk.com/embeddables/docs/ios_support_sdk/requests#show-a-ticket-screen
             let requestListController = RequestUi.buildRequestList()
 
@@ -255,7 +258,27 @@ import SupportSDK
                 aObjNavi!.pushViewController(articleController, animated: true)
                 result(true)
             }
+        } else if call.method == "showHelpCenter" {
+                     // https://developer.zendesk.com/embeddables/docs/ios_support_sdk/requests#show-a-ticket-screen
 
+                     let helpCenter = ZDKHelpCenterUi.buildHelpCenterOverviewUi()
+
+                     if let navigationController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController {
+                         navigationController.pushViewController(helpCenter, animated: true)
+                         result(true)
+                     } else {
+                         let storyboard: UIStoryboard? = UIStoryboard(name: "Main", bundle: nil)
+                         let window: UIWindow = ((UIApplication.shared.delegate?.window)!)!
+                         // let window = UIWindow(frame: UIScreen.main.bounds)
+                         // window.makeKeyAndVisible()
+                         // window.rootViewController = nil
+                         let objVC: UIViewController? = storyboard!.instantiateViewController(withIdentifier: "FlutterViewController")
+                         aObjNavi = UINavigationController(rootViewController: objVC!)
+                         // self.aObjNavi!.isNavigationBarHidden = true
+                         window.rootViewController = aObjNavi!
+                         aObjNavi!.pushViewController(helpCenter, animated: true)
+                         result(true)
+                 }
         } else {
             result(FlutterMethodNotImplemented)
         }

@@ -21,7 +21,7 @@
       </intent-filter>
     </activity>
     <activity
-        android:name=".EmbedderV1Activity"
+        android:name=".EmbeddingV1Activity"
         android:theme="@android:style/Theme.Black.NoTitleBar"
         android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection"
         android:hardwareAccelerated="true"
@@ -41,10 +41,10 @@
     <activity android:name="zendesk.support.requestlist.RequestListActivity"
         android:theme="@style/YourLightTheme" />
 
-    <!--
+
     <meta-data
         android:name="flutterEmbedding"
-        android:value="2" />-->
+        android:value="2" />-
   </application>
 
 </manifest>

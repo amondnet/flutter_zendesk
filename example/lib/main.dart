@@ -46,7 +46,6 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    initPlatformState();
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
@@ -60,10 +59,9 @@ class _MyAppState extends State<MyApp> {
     /*
 */
 
-    /*
-    await FlutterZendesk.anonymousIdentity(
-        name: "test user", email: "test@amond.net");*/
+    //   await FlutterZendesk.setIdentity(
 
+    /*
     try {
       final resultId = await FlutterZendesk.createRequest('test');
       print('result: $resultId');
@@ -72,14 +70,8 @@ class _MyAppState extends State<MyApp> {
       print('success');
     } on PlatformException {
       articles = [];
-    }
+    }*/
 
-    try {
-      //requests = await FlutterZendesk.getAllRequests();
-      print('success');
-    } on PlatformException {} catch (e) {
-      debugPrint('error : $e');
-    }
     // If the widget was removed from the tree while the asynchronous platform
     // message was in flight, we want to discard the reply rather than calling
     // setState to update our non-existent appearance.
@@ -92,6 +84,12 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    FlutterZendesk.initialized.then((value) {
+      if (!value) {
+        initPlatformState();
+      }
+    });
+
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -125,6 +123,7 @@ class _MyAppState extends State<MyApp> {
             FlatButton(
               child: Text('showHelpCenter'),
               onPressed: () {
+                initPlatformState();
                 FlutterZendesk.showHelpCenter();
               },
             )

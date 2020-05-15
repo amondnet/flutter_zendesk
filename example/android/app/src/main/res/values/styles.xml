@@ -6,6 +6,7 @@
         <item name="android:windowBackground">@drawable/launch_background</item>
     </style>
   <style name="YourLightTheme" parent="ZendeskSdkTheme.Light">
+    <item name="colorPrimary">#5FAFFA</item>
   </style>
   <style name="YourDarkTheme" parent="ZendeskSdkTheme.Dark">
   </style>

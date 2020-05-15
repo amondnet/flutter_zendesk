@@ -33,9 +33,13 @@ class FlutterZendesk {
     return;
   }
 
-  static Future<String> get platformVersion async {
-    final String version = await channel.invokeMethod('getPlatformVersion');
-    return version;
+  static Future<bool> get initialized async {
+    try {
+      return await channel.invokeMethod('isInitialized', {});
+    } catch (e) {
+      print('error : $e');
+      throw e;
+    }
   }
 
   static Future<ZdkRequest> createRequest(String requestDescription,

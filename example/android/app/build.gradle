@@ -69,3 +69,14 @@ dependencies {
     implementation 'com.google.android.material:material:1.0.0'
 
 }
+configurations.all {
+  resolutionStrategy.eachDependency {  details ->
+    def requested = details.requested
+    if (requested.group == "androidx") {
+      if (!requested.name.startsWith("multidex")) {
+        //details.useVersion "${targetSdk}.+"
+        details.useVersion "26.+"
+      }
+
+    }
+  }}

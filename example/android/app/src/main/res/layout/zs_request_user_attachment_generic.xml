@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ZendeskSdkTheme.Light.Request.User.Attachment.Holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:importantForAccessibility="no">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/request_user_attachment_generic_container"
+        style="@style/ZendeskSdkTheme.Light.Request.User.Attachment.Bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:layout_width="@dimen/zs_request_attachment_generic_width"
+            android:layout_height="@dimen/zs_request_attachment_generic_height"
+            android:paddingBottom="@dimen/zs_request_attachment_generic_padding_bottom"
+            android:paddingEnd="@dimen/zs_request_attachment_generic_padding"
+            android:paddingLeft="@dimen/zs_request_attachment_generic_padding"
+            android:paddingRight="@dimen/zs_request_attachment_generic_padding"
+            android:paddingStart="@dimen/zs_request_attachment_generic_padding"
+            android:paddingTop="@dimen/zs_request_attachment_generic_padding"
+            android:importantForAccessibility="noHideDescendants">
+
+            <TextView
+                android:id="@+id/request_user_attachment_generic_name"
+                style="@style/ZendeskSdkTheme.Light.Request.Attachment.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:maxLines="2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+                <ImageView
+                    android:id="@+id/request_user_attachment_generic_icon"
+                    android:layout_width="@dimen/zs_request_attachment_generic_icon_size"
+                    android:layout_height="@dimen/zs_request_attachment_generic_icon_size"
+                    android:src="@android:drawable/sym_def_app_icon"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/request_user_attachment_generic_type"
+                    style="@style/ZendeskSdkTheme.Light.Request.Attachment.Subtitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center_vertical"
+                    android:maxLines="1" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/request_user_attachment_generic_status"
+        style="@style/ZendeskSdkTheme.Light.Request.Message.Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/request_user_attachment_generic_container"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="invisible"
+        android:importantForAccessibility="no"
+        tools:visibility="visible"
+        tools:text="foobar"/>
+
+</RelativeLayout>
