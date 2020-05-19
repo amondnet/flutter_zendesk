@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/request_agent_message_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:importantForAccessibility="no">
+
+    <FrameLayout
+        android:id="@+id/request_agent_message_bubble"
+        style="@style/ZendeskSdkTheme.Light.Request.Agent.Message.Bubble"
+        android:layout_marginBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <zendesk.support.request.ViewRequestText
+            android:id="@+id/request_agent_message_text"
+            style="@style/ZendeskSdkTheme.Light.Request.Message.Text"
+            android:textIsSelectable="true"
+            android:paddingTop="32dp"
+            android:paddingLeft="32dp"
+            android:paddingStart="32dp"
+            android:paddingEnd="32dp"
+            android:paddingRight="32dp"
+            android:paddingBottom="@dimen/zs_request_agent_message_bottom_padding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            tools:text="asdfa asdf asdf asfd asdf"
+            android:importantForAccessibility="no"/>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/request_agent_name"
+        style="@style/ZendeskSdkTheme.Light.Request.Message.Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="invisible"
+        tools:text="Agent McAgentFace"
+        tools:visibility="visible"
+        android:importantForAccessibility="no"/>
+
+</FrameLayout>

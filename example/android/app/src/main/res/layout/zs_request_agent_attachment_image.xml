@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ZendeskSdkTheme.Light.Request.Agent.Attachment.Holder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:importantForAccessibility="no">
+
+    <androidx.cardview.widget.CardView
+        style="@style/ZendeskSdkTheme.Light.Request.Agent.Attachment.Bubble"
+        android:id="@+id/request_agent_attachment_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/request_agent_message_attachment_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:importantForAccessibility="no"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/request_agent_attachment_name"
+        style="@style/ZendeskSdkTheme.Light.Request.Message.Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/request_agent_attachment_card"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="invisible"
+        android:importantForAccessibility="no"
+        tools:text="Agent McAgentFace"
+        tools:visibility="visible" />
+
+</RelativeLayout>

@@ -7,16 +7,12 @@ import 'package:flutter/services.dart';
 import 'package:flutter_zendesk/flutter_zendesk.dart';
 
 void main(List<String> args) {
-  String appId = '';
-  String clientId = '';
-  String zendeskUrl = '';
-  String jwt = '';
-  if (args != null && args.isNotEmpty) {
-    appId = args[0];
-    clientId = args[1];
-    zendeskUrl = args[2];
-    jwt = args[3];
-  }
+  String appId = getEnvironmentValue('APP_ID', defaultValue: args[0]);
+  String clientId = getEnvironmentValue('CLIENT_ID', defaultValue: args[1]);
+  String zendeskUrl = getEnvironmentValue('ZENDESK_URL', defaultValue: args[2]);
+  String jwt =
+      getEnvironmentValue('JWT', defaultValue: args[3], required: false);
+  ;
 
   runApp(MyApp(
     appId: appId,
@@ -31,6 +27,7 @@ class MyApp extends StatefulWidget {
   final String clientId;
   final String zendeskUrl;
   final String jwt;
+
   const MyApp(
       {Key key,
       @required this.appId,
@@ -49,7 +46,6 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    initPlatformState();
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
@@ -61,37 +57,21 @@ class _MyAppState extends State<MyApp> {
     //debugPrint('result $resultId');
     // Platform messages may fail, so we use a try/catch PlatformException.
     /*
-    await FlutterZendesk.setIdentity(
-        'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1NTcyOTA5MDUuODk1LCJqdGkiOiIwOTUzMTIwYS05N2UxLTQzZjYtYWJjMS0yZjllZmI2NjAxMjgiLCJuYW1lIjoibWlybGltX2FkbWluIiwiZW1haWwiOiJtaXJsaW1wZkBnbWFpbC5jb20iLCJleHRlcm5hbF9pZCI6MX0.eHHot84tf42RE42ystPm3vUe-27Hu2CRwASWCrR4nbw');
 */
 
-    await FlutterZendesk.setIdentity(widget.jwt);
+    //   await FlutterZendesk.setIdentity(
 
+    /*
     try {
       final resultId = await FlutterZendesk.createRequest('test');
       print('result: $resultId');
-      final test = await FlutterZendesk.getAllRequests();
-      final test1 = await FlutterZendesk.getRequestById('3');
-      final test2 = await FlutterZendesk.getCommentsByRequestId('3');
-
-      print('requests : ${test.toJson()}');
-      print('getRequestById : ${test1.toJson()}');
-      test2.forEach((c) {
-        print('c : ${c.toJson()}');
-      });
 
       //articles = await FlutterZendesk.getArticlesForSectionId('360004091934');
       print('success');
     } on PlatformException {
       articles = [];
-    }
+    }*/
 
-    try {
-      //requests = await FlutterZendesk.getAllRequests();
-      print('success');
-    } on PlatformException {} catch (e) {
-      debugPrint('error : $e');
-    }
     // If the widget was removed from the tree while the asynchronous platform
     // message was in flight, we want to discard the reply rather than calling
     // setState to update our non-existent appearance.
@@ -104,6 +84,12 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
+    FlutterZendesk.initialized.then((value) {
+      if (!value) {
+        initPlatformState();
+      }
+    });
+
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -116,21 +102,29 @@ class _MyAppState extends State<MyApp> {
               key: Key('articles'),
             ),
             FlatButton(
-              child: Text('ShowTicket'),
+              child: Text('get all requests'),
               onPressed: () {
-                FlutterZendesk.showTicketScreen(context);
+                final requests = FlutterZendesk.getAllRequests();
+                print(requests);
               },
             ),
             FlatButton(
-              child: Text('ShowTickets'),
+              child: Text('showRequestList'),
               onPressed: () {
-                FlutterZendesk.showTickets();
+                FlutterZendesk.showRequestList();
               },
             ),
             FlatButton(
-              child: Text('shot article'),
+              child: Text('showRequest'),
               onPressed: () {
-                FlutterZendesk.showArticle();
+                FlutterZendesk.showRequest();
+              },
+            ),
+            FlatButton(
+              child: Text('showHelpCenter'),
+              onPressed: () {
+                initPlatformState();
+                FlutterZendesk.showHelpCenter();
               },
             )
           ]),
@@ -138,4 +132,13 @@ class _MyAppState extends State<MyApp> {
       ),
     );
   }
+}
+
+String getEnvironmentValue(String key, {required: true, String defaultValue}) {
+  final value = Platform.environment[key];
+  if (required && value == null && defaultValue == null) {
+    print('Set $key before launch the tests');
+    exit(-1);
+  }
+  return value ?? defaultValue;
 }

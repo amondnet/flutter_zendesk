@@ -33,9 +33,13 @@ class FlutterZendesk {
     return;
   }
 
-  static Future<String> get platformVersion async {
-    final String version = await channel.invokeMethod('getPlatformVersion');
-    return version;
+  static Future<bool> get initialized async {
+    try {
+      return await channel.invokeMethod('isInitialized', {});
+    } catch (e) {
+      print('error : $e');
+      throw e;
+    }
   }
 
   static Future<ZdkRequest> createRequest(String requestDescription,
@@ -171,7 +175,6 @@ class FlutterZendesk {
 
   static Future<void> setIdentity(String token) async {
     assert(token != null && token.isNotEmpty);
-
     try {
       await channel.invokeMethod('setIdentity', {
         'token': token,
@@ -183,9 +186,20 @@ class FlutterZendesk {
     return;
   }
 
-  static Future<void> showTicketScreen(context) async {
+  static Future<void> anonymousIdentity({String name, String email}) async {
     try {
-      await channel.invokeMethod('Show a ticket screen');
+      await channel
+          .invokeMethod('anonymousIdentity', {'name': name, 'email': email});
+    } catch (e) {
+      print('error : $e');
+      throw e;
+    }
+    return;
+  }
+
+  static Future<void> showRequestList() async {
+    try {
+      await channel.invokeMethod('showRequestList');
       //Navigator.pop(context);
     } catch (e) {
       print('error : $e');
@@ -194,9 +208,9 @@ class FlutterZendesk {
     return;
   }
 
-  static Future<void> showTickets() async {
+  static Future<void> showRequest() async {
     try {
-      await channel.invokeMethod('showTickets');
+      await channel.invokeMethod('showRequest');
       //Navigator.pop(context);
     } catch (e) {
       print('error : $e');
@@ -205,9 +219,20 @@ class FlutterZendesk {
     return;
   }
 
-  static void showArticle() async {
+  static void showViewArticle() async {
     try {
-      await channel.invokeMethod('showArticle');
+      await channel.invokeMethod('showViewArticle');
+      //Navigator.pop(context);
+    } catch (e) {
+      print('error : $e');
+      throw e;
+    }
+    return;
+  }
+
+  static void showHelpCenter() async {
+    try {
+      await channel.invokeMethod('showHelpCenter');
       //Navigator.pop(context);
     } catch (e) {
       print('error : $e');

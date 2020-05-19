@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/request_user_message_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:importantForAccessibility="no"
+    >
+
+    <FrameLayout
+        android:id="@+id/request_user_message_bubble"
+        android:background="@drawable/zs_request_bubble_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginEnd="8dp">
+
+        <zendesk.support.request.ViewRequestText
+            android:id="@+id/request_user_message_text"
+            style="@style/ZendeskSdkTheme.Light.Request.Message.Text"
+            android:textIsSelectable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="24dp"
+            android:paddingEnd="24dp"
+            android:paddingLeft="16dp"
+            android:paddingStart="16dp"
+            android:paddingBottom="@dimen/zs_request_user_message_bottom_padding"
+            android:paddingTop="16dp"
+            android:importantForAccessibility="no"
+            tools:text="Hey, I’m having an issue logging into my account. When I try I get ‘error code 401’ and it drops be back to the login screen. I really need access today, please help"
+            />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/request_user_message_status"
+        style="@style/ZendeskSdkTheme.Light.Request.Message.Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/request_user_message_bubble"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        android:visibility="invisible"
+        android:importantForAccessibility="no"
+        tools:text="Delivered"
+        tools:visibility="visible" />
+
+</RelativeLayout>
