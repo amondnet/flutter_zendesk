@@ -2,224 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f00e8215-90d2-4ed8-b540-2a3ba3701aa9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/0/0020cbd7236d37a7913938cbb103aea0ecb5f55f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/b/0b3b2877555a5f870242186e404e35c0deb3a18b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/e/0e33ae9199165ac65493bda96c081327f28bfc2a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/2/1201ba8a07753e66c9692d9ecde0e401be101d4e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/3/13f012f60e18f38225ce59137db2e07d5d70b29c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/8/18f51d6f01b8fe70122df81d7db68cf578830392" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1dc66bd4ea6c7e238cab708fa16cddf0036bb82f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1e66f0c57fd2531e27e2349d48c00b591b7de192" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/e/1ec35b52e6092fa6c4a05ce9fa6fada13de777c3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/3/23fe14d7fe04a2e23faee73051f9e60535c9b94c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/4/24e05a1e355c75dedafe9fa80565cecd69d957d5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/7/2762d945d0db96ad5499cf602fe0f122bd44f454" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/8/288c02ea61e179659ae25d8bba1c2043ac03577c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/1/31c70ca2bf51ed55884be4cda7ac864479633793" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/6/366903fa1df4f5da252279e944591fc0507fd19e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/9/392a224c4e0f19743e683087035bc39c86ea0720" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/c/3cdbcb57062e35514641c79da4a0a1365ee8ded6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/2/422ee36e56c28ac363d395892cff51818d1a9eec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/f/4f3e52c85b48c452bb6652f34843d910a742145b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/0/506bcf34807a38c1e1092ea047d6cdff7e15e9af" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/0/508ce6fa8ad6608a91ac7c8b1004cc0526d5b846" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/4/545b18dd8c981e85d1b9e7ba2a0ec163a926fccb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/55c5d9e2aeec1c6fd0128af53b9ea9f30a0530f7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/e/5eca97b5993130ecb783f3c0f8d3c3afa534b1ed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/713ad3fe69886a08d88c72af382500e328f35cfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/f/7f1dfe9671149f8d9c88462c92762aed23bf28d2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/853a9041dcf81c03edb44066add69a52af9f9b1f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/5/85b5ed7c1a734a8e6dd6c6c4e9edec5b9c8d0b50" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/b/8baf66e8abd00c95fd4b8404e99c74701e31309a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/c/8c07980617a5b0ab6374c6d856b6218c14834751" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/a/9a79c722cbdea817e9cbaa5cd6b33fed2a07a202" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/b/9b4bbe3dd58bdfaf2455c8d7f1db8e23fcd9bc95" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/3/a35abf1447e056db5184cc974e2d936424f18658" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/4/a44f117a07597d287cedd2edb512680ab4b470f0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/d/ad7587c8ec18babf63140b9e8a37183f7b298f82" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/a/e/ae4746ff3fdf4738da952510ef8f904490f3d153" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5bf1a8715355b00c77acb486bc40b4a4b3c78db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/6/b6ee370b7bd58a2c404962e6f1ab87d2d1e2ad22" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/8/b8bc58d17cc8b4bde43647ea244b7390b5e623a1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bd39a8876b041117663acda07b2988955cc2b619" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/d/bdad436eb3719ab69d8a9bf7d7bd9f3c3090cd6f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c0a78546b3fc76f3281ef1dcd636a70134512b12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/1/c1c78778a0cef1e5344166792d1d823fdcb8b109" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/a/da89443677dc6f26743f5bd20d05e94974cb284f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/b/db8c018c4afd05d916581d0cdf4d33c48fc07942" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e36d26693ee08f207f318bc7f79cdc12d019d503" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e66cd1eb3e25b5e192f983e142a6b3c1f963452f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/8/e8e045469170189f1d6ef12576bd01af132b1018" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/f/effc4a1f532c1cba8d1dd32e235ef452b14be28c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/0/f0e8289838e4512a14b9bf90fba77941e9724b5e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/2/f2b8c6d7a57d4d470dbf7934c8598652ec07118a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/7/f79706d33d563f8d3a00d85b5a64689092c20132" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/8/f8673a9ce836014ef1e78504fc6d813cf135e11c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/a/fa00fc3664ae659f3e9223ae671c8bf17757b750" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/c/fc32e79d904334cabeb815dde57bb50c2b4a387f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_activity_help_center.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_activity_request.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_activity_request_list.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_activity_request_list_empty_logo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_activity_request_list_scene_data.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_activity_request_list_scene_empty.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_activity_view_article.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_fragment_help.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_request_agent_attachment_generic.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_request_agent_attachment_image.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_request_agent_message.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_request_attachment_actionview.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_request_carousel_file.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_request_carousel_image.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_request_date_message.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_request_dialog_retry.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_request_list_ticket_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_request_system_message.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_request_toolbar_content.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_request_user_attachment_generic.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_request_user_attachment_image.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_request_user_message.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_row_action.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_row_article.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_row_article_attachment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_row_category.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_row_loading_progress.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_row_no_articles_found.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_row_padding.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_row_search_article.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_row_section.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_view_article_voting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_view_request_attachments_indicator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_view_request_conversations_disabled.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_view_request_conversations_enabled.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/res/layout/zs_view_request_message_composer.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/0/0/0020cbd7236d37a7913938cbb103aea0ecb5f55f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/0/b/0b3b2877555a5f870242186e404e35c0deb3a18b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/0/e/0e33ae9199165ac65493bda96c081327f28bfc2a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/1/2/1201ba8a07753e66c9692d9ecde0e401be101d4e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/1/3/13f012f60e18f38225ce59137db2e07d5d70b29c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/1/8/18f51d6f01b8fe70122df81d7db68cf578830392" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/1/d/1dc66bd4ea6c7e238cab708fa16cddf0036bb82f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/1/e/1e66f0c57fd2531e27e2349d48c00b591b7de192" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/1/e/1ec35b52e6092fa6c4a05ce9fa6fada13de777c3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/2/3/23fe14d7fe04a2e23faee73051f9e60535c9b94c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/2/4/24e05a1e355c75dedafe9fa80565cecd69d957d5" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/2/7/2762d945d0db96ad5499cf602fe0f122bd44f454" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/2/8/288c02ea61e179659ae25d8bba1c2043ac03577c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/3/1/31c70ca2bf51ed55884be4cda7ac864479633793" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/3/6/366903fa1df4f5da252279e944591fc0507fd19e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/3/9/392a224c4e0f19743e683087035bc39c86ea0720" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/3/c/3cdbcb57062e35514641c79da4a0a1365ee8ded6" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/4/2/422ee36e56c28ac363d395892cff51818d1a9eec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/4/f/4f3e52c85b48c452bb6652f34843d910a742145b" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/5/0/506bcf34807a38c1e1092ea047d6cdff7e15e9af" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/5/0/508ce6fa8ad6608a91ac7c8b1004cc0526d5b846" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/5/4/545b18dd8c981e85d1b9e7ba2a0ec163a926fccb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/5/5/55c5d9e2aeec1c6fd0128af53b9ea9f30a0530f7" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/5/e/5eca97b5993130ecb783f3c0f8d3c3afa534b1ed" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/7/1/713ad3fe69886a08d88c72af382500e328f35cfd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/7/f/7f1dfe9671149f8d9c88462c92762aed23bf28d2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/8/5/853a9041dcf81c03edb44066add69a52af9f9b1f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/8/5/85b5ed7c1a734a8e6dd6c6c4e9edec5b9c8d0b50" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/8/b/8baf66e8abd00c95fd4b8404e99c74701e31309a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/8/c/8c07980617a5b0ab6374c6d856b6218c14834751" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/9/a/9a79c722cbdea817e9cbaa5cd6b33fed2a07a202" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/9/b/9b4bbe3dd58bdfaf2455c8d7f1db8e23fcd9bc95" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/a/3/a35abf1447e056db5184cc974e2d936424f18658" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/a/4/a44f117a07597d287cedd2edb512680ab4b470f0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/a/d/ad7587c8ec18babf63140b9e8a37183f7b298f82" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/a/e/ae4746ff3fdf4738da952510ef8f904490f3d153" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/b/5/b5bf1a8715355b00c77acb486bc40b4a4b3c78db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/b/6/b6ee370b7bd58a2c404962e6f1ab87d2d1e2ad22" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/b/8/b8bc58d17cc8b4bde43647ea244b7390b5e623a1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/b/d/bd39a8876b041117663acda07b2988955cc2b619" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/b/d/bdad436eb3719ab69d8a9bf7d7bd9f3c3090cd6f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/c/0/c0a78546b3fc76f3281ef1dcd636a70134512b12" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/c/1/c1c78778a0cef1e5344166792d1d823fdcb8b109" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/d/a/da89443677dc6f26743f5bd20d05e94974cb284f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/d/b/db8c018c4afd05d916581d0cdf4d33c48fc07942" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/e/3/e36d26693ee08f207f318bc7f79cdc12d019d503" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/e/6/e66cd1eb3e25b5e192f983e142a6b3c1f963452f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/e/8/e8e045469170189f1d6ef12576bd01af132b1018" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/e/f/effc4a1f532c1cba8d1dd32e235ef452b14be28c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/f/0/f0e8289838e4512a14b9bf90fba77941e9724b5e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/f/2/f2b8c6d7a57d4d470dbf7934c8598652ec07118a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/f/7/f79706d33d563f8d3a00d85b5a64689092c20132" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/f/8/f8673a9ce836014ef1e78504fc6d813cf135e11c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/f/a/fa00fc3664ae659f3e9223ae671c8bf17757b750" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/f/c/fc32e79d904334cabeb815dde57bb50c2b4a387f" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_activity_help_center.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_activity_request.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_activity_request_list.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_activity_request_list_empty_logo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_activity_request_list_scene_data.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_activity_request_list_scene_empty.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_activity_view_article.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_fragment_help.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_request_agent_attachment_generic.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_request_agent_attachment_image.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_request_agent_message.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_request_attachment_actionview.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_request_carousel_file.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_request_carousel_image.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_request_date_message.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_request_dialog_retry.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_request_list_ticket_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_request_system_message.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_request_toolbar_content.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_request_user_attachment_generic.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_request_user_attachment_image.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_request_user_message.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_row_action.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_row_article.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_row_article_attachment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_row_category.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_row_loading_progress.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_row_no_articles_found.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_row_padding.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_row_search_article.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_row_section.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_view_article_voting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_view_request_attachments_indicator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_view_request_conversations_disabled.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_view_request_conversations_enabled.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/layout/zs_view_request_message_composer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/7/2762d945d0db96ad5499cf602fe0f122bd44f454" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/7/2762d945d0db96ad5499cf602fe0f122bd44f454" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/0/506bcf34807a38c1e1092ea047d6cdff7e15e9af" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5bf1a8715355b00c77acb486bc40b4a4b3c78db" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/5/b5bf1a8715355b00c77acb486bc40b4a4b3c78db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/3/e36d26693ee08f207f318bc7f79cdc12d019d503" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/net/amond/flutter_zendesk/FlutterZendeskPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/net/amond/flutter_zendesk/FlutterZendeskPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/kotlin/net/amond/flutter_zendesk_example/EmbedderV1Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/kotlin/net/amond/flutter_zendesk_example/EmbeddingV1Activity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/libraries/Flutter_Plugins.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/2/7/2762d945d0db96ad5499cf602fe0f122bd44f454" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/2/7/2762d945d0db96ad5499cf602fe0f122bd44f454" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/5/0/506bcf34807a38c1e1092ea047d6cdff7e15e9af" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/b/5/b5bf1a8715355b00c77acb486bc40b4a4b3c78db" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/b/5/b5bf1a8715355b00c77acb486bc40b4a4b3c78db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/e/3/e36d26693ee08f207f318bc7f79cdc12d019d503" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/android/src/main/kotlin/net/amond/flutter_zendesk/FlutterZendeskPlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/android/src/main/kotlin/net/amond/flutter_zendesk/FlutterZendeskPlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/kotlin/net/amond/flutter_zendesk_example/EmbedderV1Activity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/kotlin/net/amond/flutter_zendesk_example/EmbeddingV1Activity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/app/src/main/res/values/styles.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/ios/Classes/SwiftFlutterZendeskPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/ios/Classes/SwiftFlutterZendeskPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/flutter_zendesk.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/flutter_zendesk.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Runner.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Classes/SwiftFlutterZendeskPlugin.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Classes/SwiftFlutterZendeskPlugin.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/flutter_zendesk.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/flutter_zendesk.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/article.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/lib/src/model/article.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/test/flutter_zendesk_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/.symlinks/plugins/flutter_zendesk/test/flutter_zendesk_test.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/model/article.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/model/article.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/flutter_zendesk_test.dart" beforeDir="false" afterPath="$PROJECT_DIR$/test/flutter_zendesk_test.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -312,7 +114,7 @@
       <recent name="$PROJECT_DIR$/example/lib" />
     </key>
   </component>
-  <component name="RunManager" selected="Flutter.main.dart (1)">
+  <component name="RunManager" selected="Flutter Test.getArticlesForSectionId">
     <configuration name="app_test.dart" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application" temporary="true" nameIsGenerated="true">
       <option name="filePath" value="$PROJECT_DIR$/example/test_driver/app_test.dart" />
       <option name="workingDirectory" value="$PROJECT_DIR$/example" />
@@ -357,11 +159,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Flutter Test.getArticlesForSectionId" />
         <item itemvalue="Flutter Test.Verify Platform version" />
         <item itemvalue="Dart Command Line App.app_test.dart" />
         <item itemvalue="Flutter Test.initialize" />
         <item itemvalue="Flutter Test.tests in flutter_zendesk_test.dart" />
-        <item itemvalue="Flutter Test.getArticlesForSectionId" />
       </list>
     </recent_temporary>
   </component>
@@ -401,7 +203,9 @@
       <workItem from="1589368045947" duration="1076000" />
       <workItem from="1589369879930" duration="619000" />
       <workItem from="1589370533666" duration="24000" />
-      <workItem from="1589531257555" duration="9463000" />
+      <workItem from="1589531257555" duration="9488000" />
+      <workItem from="1589849893295" duration="1312000" />
+      <workItem from="1589852983219" duration="1405000" />
     </task>
     <task id="LOCAL-00001" summary="development preview">
       <created>1556718519231</created>
@@ -563,44 +367,49 @@
       <screen x="0" y="23" width="1920" height="1019" />
     </state>
     <state x="893" y="335" key="#com.intellij.fileTypes.FileTypeChooser/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1019@0.23.1920.1019" timestamp="1589347150061" />
-    <state x="453" y="25" key="CommitChangelistDialog2" timestamp="1589369084428">
-      <screen x="0" y="23" width="1920" height="1020" />
+    <state x="453" y="25" key="CommitChangelistDialog2" timestamp="1589542337707">
+      <screen x="0" y="23" width="1920" height="1016" />
     </state>
+    <state x="453" y="25" key="CommitChangelistDialog2/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1589542337707" />
     <state x="453" y="25" key="CommitChangelistDialog2/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1020@0.23.1920.1020" timestamp="1589369084428" />
-    <state width="1358" height="278" key="GridCell.Tab.0.bottom" timestamp="1589542243360">
-      <screen x="0" y="23" width="1920" height="1017" />
+    <state width="1562" height="277" key="GridCell.Tab.0.bottom" timestamp="1589857554979">
+      <screen x="0" y="23" width="1920" height="1015" />
     </state>
-    <state width="1099" height="262" key="GridCell.Tab.0.bottom/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1589536373638" />
+    <state width="1562" height="277" key="GridCell.Tab.0.bottom/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1015@0.23.1920.1015" timestamp="1589857554979" />
+    <state width="1358" height="278" key="GridCell.Tab.0.bottom/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1589542350008" />
     <state width="1504" height="358" key="GridCell.Tab.0.bottom/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1017@-1920.412.1920.1057" timestamp="1589538408396" />
     <state width="1358" height="278" key="GridCell.Tab.0.bottom/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1589542243360" />
     <state width="999" height="203" key="GridCell.Tab.0.bottom/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1019@0.23.1920.1019" timestamp="1589367013000" />
     <state width="1024" height="303" key="GridCell.Tab.0.bottom/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1020@0.23.1920.1020" timestamp="1589369124145" />
     <state width="1278" height="303" key="GridCell.Tab.0.bottom/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1021@0.23.1920.1021" timestamp="1589370498660" />
     <state width="1550" height="403" key="GridCell.Tab.0.bottom/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1587135491855" />
-    <state width="1358" height="278" key="GridCell.Tab.0.center" timestamp="1589542243359">
-      <screen x="0" y="23" width="1920" height="1017" />
+    <state width="1562" height="277" key="GridCell.Tab.0.center" timestamp="1589857554979">
+      <screen x="0" y="23" width="1920" height="1015" />
     </state>
-    <state width="1099" height="262" key="GridCell.Tab.0.center/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1589536373637" />
+    <state width="1562" height="277" key="GridCell.Tab.0.center/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1015@0.23.1920.1015" timestamp="1589857554979" />
+    <state width="1358" height="278" key="GridCell.Tab.0.center/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1589542350008" />
     <state width="1504" height="358" key="GridCell.Tab.0.center/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1017@-1920.412.1920.1057" timestamp="1589538408396" />
     <state width="1358" height="278" key="GridCell.Tab.0.center/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1589542243359" />
     <state width="999" height="203" key="GridCell.Tab.0.center/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1019@0.23.1920.1019" timestamp="1589367013000" />
     <state width="1024" height="303" key="GridCell.Tab.0.center/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1020@0.23.1920.1020" timestamp="1589369124145" />
     <state width="1278" height="303" key="GridCell.Tab.0.center/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1021@0.23.1920.1021" timestamp="1589370498660" />
     <state width="1550" height="403" key="GridCell.Tab.0.center/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1587135491855" />
-    <state width="1358" height="278" key="GridCell.Tab.0.left" timestamp="1589542243359">
-      <screen x="0" y="23" width="1920" height="1017" />
+    <state width="1562" height="277" key="GridCell.Tab.0.left" timestamp="1589857554978">
+      <screen x="0" y="23" width="1920" height="1015" />
     </state>
-    <state width="1099" height="262" key="GridCell.Tab.0.left/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1589536373637" />
+    <state width="1562" height="277" key="GridCell.Tab.0.left/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1015@0.23.1920.1015" timestamp="1589857554978" />
+    <state width="1358" height="278" key="GridCell.Tab.0.left/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1589542350007" />
     <state width="1504" height="358" key="GridCell.Tab.0.left/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1017@-1920.412.1920.1057" timestamp="1589538408395" />
     <state width="1358" height="278" key="GridCell.Tab.0.left/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1589542243359" />
     <state width="999" height="203" key="GridCell.Tab.0.left/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1019@0.23.1920.1019" timestamp="1589367013000" />
     <state width="1024" height="303" key="GridCell.Tab.0.left/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1020@0.23.1920.1020" timestamp="1589369124144" />
     <state width="1278" height="303" key="GridCell.Tab.0.left/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1021@0.23.1920.1021" timestamp="1589370498659" />
     <state width="1550" height="403" key="GridCell.Tab.0.left/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1587135491854" />
-    <state width="1358" height="278" key="GridCell.Tab.0.right" timestamp="1589542243359">
-      <screen x="0" y="23" width="1920" height="1017" />
+    <state width="1562" height="277" key="GridCell.Tab.0.right" timestamp="1589857554979">
+      <screen x="0" y="23" width="1920" height="1015" />
     </state>
-    <state width="1099" height="262" key="GridCell.Tab.0.right/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1589536373637" />
+    <state width="1562" height="277" key="GridCell.Tab.0.right/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1015@0.23.1920.1015" timestamp="1589857554979" />
+    <state width="1358" height="278" key="GridCell.Tab.0.right/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1589542350008" />
     <state width="1504" height="358" key="GridCell.Tab.0.right/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1017@-1920.412.1920.1057" timestamp="1589538408396" />
     <state width="1358" height="278" key="GridCell.Tab.0.right/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1017@0.23.1920.1017" timestamp="1589542243359" />
     <state width="999" height="203" key="GridCell.Tab.0.right/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1019@0.23.1920.1019" timestamp="1589367013000" />
@@ -618,9 +427,10 @@
     <state x="1015" y="274" width="586" height="517" key="find.popup/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1019@0.23.1920.1019" timestamp="1589366863159" />
     <state x="1015" y="274" width="586" height="518" key="find.popup/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1020@0.23.1920.1020" timestamp="1589369050934" />
     <state x="1015" y="274" width="586" height="518" key="find.popup/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1587134552937" />
-    <state x="966" y="248" width="670" height="674" key="search.everywhere.popup" timestamp="1589542314612">
-      <screen x="0" y="23" width="1920" height="1016" />
+    <state x="966" y="248" width="670" height="674" key="search.everywhere.popup" timestamp="1589853686907">
+      <screen x="0" y="23" width="1920" height="1015" />
     </state>
+    <state x="966" y="248" width="670" height="674" key="search.everywhere.popup/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1015@0.23.1920.1015" timestamp="1589853686907" />
     <state x="966" y="248" width="670" height="674" key="search.everywhere.popup/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1016@0.23.1920.1016" timestamp="1589542314612" />
     <state x="966" y="249" width="670" height="675" key="search.everywhere.popup/1920.-420.1080.1897/-1920.412.1920.1057/0.23.1920.1019@0.23.1920.1019" timestamp="1589364475559" />
     <state x="966" y="249" width="670" height="676" key="search.everywhere.popup/1920.23.1680.1027/0.23.1920.1021@0.23.1920.1021" timestamp="1587134148352" />

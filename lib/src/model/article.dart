@@ -11,6 +11,7 @@ class Article {
   String body;
   @JsonKey(name: 'author_name')
   String authorName;
+  @JsonKey(name: 'author_id')
   int authorId;
   @JsonKey(name: 'article_details')
   String articleDetails;
