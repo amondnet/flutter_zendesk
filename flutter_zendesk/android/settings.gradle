@@ -1,0 +1,3 @@
+package flutter_zendesk.android
+
+rootProject.name = 'flutter_zendesk'

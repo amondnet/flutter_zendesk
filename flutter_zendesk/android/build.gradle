@@ -1,0 +1,60 @@
+package flutter_zendesk.android
+
+group 'net.amond.flutter_zendesk'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.3.72'
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://kotlin.bintray.com/kotlinx" }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-serialization:$kotlin_version"
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
+        maven { url "https://kotlin.bintray.com/kotlinx" }
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlinx-serialization'
+android {
+    compileSdkVersion 28
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    defaultConfig {
+        minSdkVersion 16
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+
+    api group: 'com.zendesk', name: 'messaging', version: '4.2.1'
+    api group: 'com.zendesk', name: 'support', version: '4.0.0'
+    api group: 'com.zendesk', name: 'answerbot', version: '2.0.0'
+    api group: 'com.zendesk', name: 'chat', version: '2.0.0'
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0" // JVM d
+    implementation "org.jetbrains.kotlinx:kotlinx-serialization-properties:0.20.0" // JVM dependency
+    // ependency
+}

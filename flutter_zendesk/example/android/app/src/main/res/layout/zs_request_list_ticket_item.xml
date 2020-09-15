@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="12dp"
+        android:paddingEnd="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingStart="16dp"
+        android:paddingTop="13dp"
+        tools:ignore="UselessParent">
+
+        <zendesk.support.ZendeskAvatarView
+            android:id="@+id/request_list_item_avatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp" />
+
+        <TextView
+            android:id="@+id/request_list_item_time"
+            style="@style/ZendeskSdkTheme.Light.RequestList.Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/request_list_item_avatar"
+            tools:text="10:10" />
+
+        <TextView
+            android:id="@+id/request_list_item_user"
+            style="@style/ZendeskSdkTheme.Light.RequestList.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/request_list_item_avatar"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toEndOf="@id/request_list_item_avatar"
+            android:layout_toLeftOf="@id/request_list_item_time"
+            android:layout_toRightOf="@id/request_list_item_avatar"
+            android:layout_toStartOf="@id/request_list_item_time"
+            android:ellipsize="middle" />
+
+        <TextView
+            android:id="@+id/request_list_item_subject"
+            style="@style/ZendeskSdkTheme.Light.RequestList.Subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/request_list_item_user"
+            android:layout_alignLeft="@id/request_list_item_user"
+            android:layout_alignRight="@id/request_list_item_user"
+            android:layout_alignStart="@id/request_list_item_user"
+            android:layout_below="@id/request_list_item_user"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/request_list_item_body"
+            style="@style/ZendeskSdkTheme.Light.RequestList.Body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/request_list_item_user"
+            android:layout_alignLeft="@id/request_list_item_user"
+            android:layout_alignRight="@id/request_list_item_user"
+            android:layout_alignStart="@id/request_list_item_user"
+            android:layout_below="@id/request_list_item_subject"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/request_list_item_status"
+            style="@style/ZendeskSdkTheme.Light.RequestList.AvatarText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/request_list_item_user"
+            android:layout_alignLeft="@id/request_list_item_user"
+            android:layout_alignRight="@id/request_list_item_user"
+            android:layout_alignStart="@id/request_list_item_user"
+            android:layout_below="@id/request_list_item_subject"
+            android:ellipsize="end"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</FrameLayout>

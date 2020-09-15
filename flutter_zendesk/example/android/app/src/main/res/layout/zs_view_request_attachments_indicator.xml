@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/zs_request_message_composer_button_width"
+    android:layout_height="@dimen/zs_request_message_composer_button_height"
+    android:foreground="?attr/selectableItemBackgroundBorderless">
+
+    <TextView
+        android:id="@+id/attachments_indicator_counter"
+        style="@style/TextAppearance.Design.Counter"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="top|end"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:background="@drawable/zs_request_attachments_indicator_counter_background"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:importantForAccessibility="no"
+        android:textColor="@color/zs_color_white"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        tools:ignore="SmallSp"
+        tools:targetApi="lollipop"
+        tools:text="2"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/attachments_indicator_icon"
+        android:layout_width="@dimen/zs_request_message_composer_button_icon_size"
+        android:layout_height="@dimen/zs_request_message_composer_button_icon_size"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginStart="@dimen/zs_request_message_composer_button_margin_side"
+        android:layout_marginLeft="@dimen/zs_request_message_composer_button_margin_side"
+        android:importantForAccessibility="no"
+        android:scaleX="@integer/zs_request_rtl_support_scale_x"
+        app:srcCompat="@drawable/zs_request_ic_attach_file" />
+
+    <View
+        android:id="@+id/attachments_indicator_bottom_border"
+        android:layout_width="@dimen/zs_request_attachment_indicator_bottom_border_width"
+        android:layout_height="@dimen/zs_request_attachment_indicator_bottom_border_height"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="@dimen/zs_request_message_composer_button_margin_side"
+        android:layout_marginLeft="@dimen/zs_request_message_composer_button_margin_side"
+        android:background="?attr/colorPrimary"
+        android:importantForAccessibility="no"
+        android:visibility="invisible"
+        tools:background="@color/zs_color_black"
+        tools:visibility="visible" />
+
+</FrameLayout>

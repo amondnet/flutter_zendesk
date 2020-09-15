@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <!-- Show a splash screen on the activity. Automatically removed when
+             Flutter draws its first frame -->
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+  <style name="YourLightTheme" parent="ZendeskSdkTheme.Light">
+    <item name="colorPrimary">#5FAFFA</item>
+  </style>
+  <style name="YourDarkTheme" parent="ZendeskSdkTheme.Dark">
+  </style>
+  <style name="YourLightTheme.DarkActionBar" parent="ZendeskSdkTheme.Light.DarkActionBar">
+  </style>
+</resources>
